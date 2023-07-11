@@ -1,13 +1,13 @@
 # NanoLocz
 Atomic Force Microscopy Analysis Platform
 
-##NanoLocz_PreRelease Install:
+## NanoLocz_PreRelease Install:
 ============================
 Options for Install:
 1. NanoLocz as MATLAB app - Requires MATLAB
 2. NanoLocz for Mac
 3. NanoLocz for Windows
-============================
+
 
 Option 1. NanoLocz as MATLAB app:
 Open 'NanoLocz_PreRelease.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
