@@ -19,4 +19,6 @@ Contributions are extremely welcome.
 ## License
 
 Distributed under the terms of the [GPLv3] license,
-"napari-chatgpt" is free and open source software
+"NanoLocz" is free and open source software
+
+[GNU GPL v3.0]: http://www.gnu.org/licenses/gpl-3.0.txt
