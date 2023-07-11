@@ -18,7 +18,7 @@ Contributions are extremely welcome.
 
 ## License
 
-Distributed under the terms of the [GPLv3] license,
+Distributed under the terms of the [GNU GPL v3.0] license,
 "NanoLocz" is free and open source software
 
 [GNU GPL v3.0]: http://www.gnu.org/licenses/gpl-3.0.txt
