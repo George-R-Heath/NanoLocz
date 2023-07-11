@@ -2,6 +2,19 @@
 Atomic Force Microscopy Analysis Platform
 
 ## About NanoLocz
+NanoLocz is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
+height data from AFM and HS-AFM imaging. 
+
+Capabilities:\
+Image Levelling \
+Line Profiling  \
+Video Alignment \
+Particle Detection (height or reference based) \
+Single Particle Tracking \
+Particle Alignment \
+**Localization AFM**
+
+Compatible file types:  .spm  .jpk  .ARIS  .tiff
 
 
 ## NanoLocz Pre-Release Install:
