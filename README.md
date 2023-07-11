@@ -9,6 +9,7 @@ Currently at pre-release stage so expect some errors and bugs
 height data from AFM and HS-AFM imaging with the aim of increasing throughput.
 
 **Capabilities:**
+* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff
 * Image Levelling 
 * Line Profiling  
 * Video Alignment 
@@ -18,7 +19,7 @@ height data from AFM and HS-AFM imaging with the aim of increasing throughput.
 * *Localization AFM*
 * Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls
 
-**Compatible file types:**  .spm,  .jpk,  .ARIS,  .tiff.... more being added\
+**Compatible file types:**  .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff.... more being added\
 please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 
 ## NanoLocz Pre-Release Install:
