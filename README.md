@@ -1,22 +1,24 @@
 # NanoLocz
-Atomic Force Microscopy Analysis Platform
+Atomic Force Microscopy Analysis Platform.
+
+Currently at pre-release stage so expect some errors and bugs 
 
 ## About NanoLocz
-NanoLocz is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
-height data from AFM and HS-AFM imaging with the aim 
+*NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
+height data from AFM and HS-AFM imaging with the aim of increasing throughput.
 
-Capabilities:\
-Image Levelling \
-Line Profiling  \
-Video Alignment \
-Particle Detection (height or reference based) \
-Single Particle Tracking \
-Particle Alignment \
-**Localization AFM**\
-Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls
+**Capabilities:**
+* Image Levelling 
+* Line Profiling  
+* Video Alignment 
+* Particle Detection (height or reference based)
+* Single Particle Tracking
+* Particle Alignment
+* *Localization AFM*
+* Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls
 
-Compatible file types:  .spm,  .jpk,  .ARIS,  .tiff.... more being added, please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
-
+**Compatible file types:**  .spm,  .jpk,  .ARIS,  .tiff.... more being added\
+please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 
 ## NanoLocz Pre-Release Install:
 Options for Install:
@@ -59,8 +61,10 @@ Distributed under the terms of the [GNU GPL v3.0] license,
 "NanoLocz" is free and open source software
 
 ## Publications
- If using the Localization Atomic Force Microscopy method please cite:\
+   * If using the Localization Atomic Force Microscopy method please cite:\
 [Heath, G.R., Kots, E., Robertson, J.L. et al. Localization atomic force microscopy. Nature 594, 385–390 (2021)]
+
+A preprint describing the *NanoLocz* workflow will be uploaded soon... 
 
 [GNU GPL v3.0]: http://www.gnu.org/licenses/gpl-3.0.txt
 [Heath, G.R., Kots, E., Robertson, J.L. et al. Localization atomic force microscopy. Nature 594, 385–390 (2021)]: https://doi.org/10.1038/s41586-021-03551-x
