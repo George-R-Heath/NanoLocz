@@ -1,0 +1,11 @@
+Open_NanoScope.m
+Modified version of:
+Jaco de Groot (2023). Open Nanoscope 6 AFM images (https://www.mathworks.com/matlabcentral/fileexchange/11515-open-nanoscope-6-afm-images), MATLAB Central File Exchange. Retrieved June 30, 2023.
+
+This work by EPFL STI IBI LBNI is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+track_particles.m
+Modified version of:
+Jean-Yves Tinevez (2023). simpletracker (https://github.com/tinevez/simpletracker), GitHub. Retrieved June 30, 2023.
+
+BSD 3-Clause License, Copyright (c) 2019, Jean-Yves Tinevez, All rights reserved.
