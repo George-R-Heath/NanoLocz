@@ -44,11 +44,14 @@ for i = 1:n
 
     shifty = round(Part.Locs(i,2)+ref.position(4)/2+dy1)-(Part.Locs(i,2)+ref.position(4)/2+dy1);
     shiftx = round(Part.Locs(i,1)+ref.position(3)/2+dx1)-(Part.Locs(i,1)+ref.position(3)/2+dx1);
-  
-    tform = rigidtform2d(-Part.Locs(i,8),[shiftx, shifty]);
-    sameAsInput = affineOutputView(size(Result(:,:,i)),tform,"BoundsStyle","CenterOutput");
-    Result(:,:,i) = imwarp(Result(:,:,i),tform,"OutputView",sameAsInput,'interp','bicubic');
-   
+  try
+      tform = rigidtform2d(-Part.Locs(i,8),[shiftx, shifty]);
+      sameAsInput = affineOutputView(size(Result(:,:,i)),tform,"BoundsStyle","CenterOutput");
+      Result(:,:,i) = imwarp(Result(:,:,i),tform,"OutputView",sameAsInput,'interp','bicubic');
+  catch
+      Result(:,:,i) = imrotate(Result(:,:,i), app.Part.Locs(i,8), 'crop');
+      Result(:,:,i) = imtranslate(Result(:,:,i), [shiftx, shifty] );
+  end
     if mod(i, stepsPerUpdate) == 0 || i == n
         progressBar.Position(3) = i / n;
         progressText.String = sprintf([num2str(i),' particles assembled']);
