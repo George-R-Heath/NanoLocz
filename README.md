@@ -2,7 +2,7 @@
 Atomic Force Microscopy Analysis Platform.
 
 
-Currently at pre-release stage so expect some errors and bugs\ 
+Currently at pre-release stage so expect some errors and bugs
 
 Bug 21.07.2023: 'DoubleClickedFnc' error when using NanoLocz as an app on MATLAB version pre 2022b
 
