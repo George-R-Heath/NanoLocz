@@ -4,7 +4,7 @@ Atomic Force Microscopy Analysis Platform.
 
 Currently at pre-release stage so expect some errors and bugs
 
-Bug fix 21.07.2023: Issues with using pre MATLAB 2023a when running the app in MATLAB -> NanoLocz v1.02 has increased compatibility to MATLAB 2020a onwards
+21.07.2023 - NanoLocz v1.02 has increased compatibility to MATLAB 2020a onwards. Issues with using pre MATLAB 2023a when running the app in MATLAB.
 
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
@@ -31,7 +31,7 @@ Options for Install:
 3. NanoLocz for Windows
 
 Option 1. NanoLocz as MATLAB app:
-Open 'NanoLocz_PreRelease.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
+Open 'Install_NanoLocz_v1_02.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
 Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to 
 Favourites and/or Quick Access Toolbar.\
 **MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox.
