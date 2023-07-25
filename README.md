@@ -4,8 +4,8 @@ Atomic Force Microscopy Analysis Platform.
 
 Currently at pre-release stage so expect some errors and bugs
 
-21.07.2023 - NanoLocz v1.02 has increased compatibility to MATLAB 2020a onwards. Issues with using pre MATLAB 2023a when running the app in MATLAB.\
-25.07.2023 - Update to Windows Desktop version to fix error message: 'Undefined function 'thresholder' for input...'
+* 21.07.2023 - NanoLocz v1.02 has increased compatibility to MATLAB 2020a onwards. Issues with using pre MATLAB 2023a when running the app in MATLAB
+* 25.07.2023 - Update to Windows Desktop version to fix error message: 'Undefined function 'thresholder' for input...'
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
 height data from AFM and HS-AFM imaging with the aim of increasing throughput.
