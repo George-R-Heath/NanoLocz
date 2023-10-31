@@ -3,46 +3,46 @@
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
-Full version released - go to releases to download 
+Full version released - Go to 'Releases' to download the latest version 
 
-* 21.07.2023 - NanoLocz v1.02 has increased compatibility to MATLAB 2020a onwards. Issues with using pre MATLAB 2023a when running the app in MATLAB
-* 25.07.2023 - Update to Windows Desktop version to fix error message: 'Undefined function 'thresholder' for input...'
-* 02.08.2023 - Update to MATLAB app to fix bug when opening app processed images
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
 height data from AFM and HS-AFM imaging with the aim of increasing throughput.
 
 **Capabilities:**
-* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff
+* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
 * Image Levelling 
 * Line Profiling  
-* Video Alignment 
+* Video Alignment
+* Simulation AFM
+* Mask Analysis
 * Particle Detection (height or reference based)
 * Single Particle Tracking
 * Particle Alignment
 * *Localization AFM*
 * Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls
 
-**Compatible file types:**  .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff.... more being added\
+**Compatible file types:**  .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy.... more being added\
 please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 
-## NanoLocz Pre-Release Install:
+## NanoLocz Install - Go to 'Releases':
 Options for Install:
-1. NanoLocz as MATLAB app - Requires MATLAB 2020a or newer + Toolboxes
+1. NanoLocz for Windows
 2. NanoLocz for Mac
-3. NanoLocz for Windows
+3. NanoLocz as MATLAB app - Requires MATLAB 2020a or newer + Toolboxes
 
-Option 1. NanoLocz as MATLAB app:
-Open 'Install_NanoLocz_v1_02.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
+Install as Mac desktop app download:
+Mac_AppInstaller_mcr.app.zip
+
+Install as Windows desktop app download:
+Windows_AppInstaller_mcr.exe
+
+Install as MATLAB app download:
+NanoLocz.mlappinstall
+Open 'NanoLocz.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
 Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to 
 Favourites and/or Quick Access Toolbar.\
-**MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox.
-
-Option 2. NanoLocz for Mac:
-Open 'Install file' folder and open 'MyAppInstaller_web' -> follow the install instructions in popup.
-
-Option 3. NanoLocz for Windows:
-Open 'Install file' folder and open 'MyAppInstaller_mcr.exe' -> follow the install instructions in popup.
+**MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Bioinformatics Toolbox, Computer Vision Toolbox.
 
 Note: loading on start-up of the app can take ~1min for Mac/Windows versions
 
