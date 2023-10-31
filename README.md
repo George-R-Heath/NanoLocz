@@ -26,25 +26,16 @@ height data from AFM and HS-AFM imaging with the aim of increasing throughput.
 please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 
 ## NanoLocz Install - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases):
+
+Note: loading on start-up of the app can take ~1min for Mac/Windows versions\
 Options for Install:
-1. NanoLocz for Windows
-2. NanoLocz for Mac
-3. NanoLocz as MATLAB app - Requires MATLAB 2020a or newer + Toolboxes
-
-Install as Mac desktop app download:
-Mac_AppInstaller_mcr.app.zip
-
-Install as Windows desktop app download:
-Windows_AppInstaller_mcr.exe
-
-Install as MATLAB app download:
-NanoLocz.mlappinstall
+1. Install as Mac desktop app download: Mac_AppInstaller_mcr.app.zip
+2. Install as Windows desktop app download: Windows_AppInstaller_mcr.exe
+3. Install as MATLAB app download: NanoLocz.mlappinstall
 Open 'NanoLocz.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
 Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to 
 Favourites and/or Quick Access Toolbar.\
 **MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Bioinformatics Toolbox, Computer Vision Toolbox.
-
-Note: loading on start-up of the app can take ~1min for Mac/Windows versions
 
 ## Disclaimer:
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
