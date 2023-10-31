@@ -3,7 +3,8 @@
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
-31.10.2023 - Full version released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version 
+31.10.2023 - Full version released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
+Includes several updates to file openers, stability, speed and new features.
 
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
