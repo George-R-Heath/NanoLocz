@@ -3,7 +3,7 @@
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
-Currently at pre-release stage so expect some errors and bugs
+Full version released - go to releases to download 
 
 * 21.07.2023 - NanoLocz v1.02 has increased compatibility to MATLAB 2020a onwards. Issues with using pre MATLAB 2023a when running the app in MATLAB
 * 25.07.2023 - Update to Windows Desktop version to fix error message: 'Undefined function 'thresholder' for input...'
