@@ -1,5 +1,7 @@
 <meta name="google-site-verification" content="IWX1VPcWKI5YV0hYlbNPSuaXoQ5yva_cm-kQpu8gc5I" />
 
+[![View NanoLocz on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/154880-nanolocz)
+
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
