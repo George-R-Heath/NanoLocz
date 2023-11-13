@@ -6,7 +6,8 @@
 Atomic Force Microscopy Analysis Platform.
 
 31.10.2023 - Full version released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
-Includes several updates to file openers, stability, speed and new features.
+Includes several updates to file openers, stability, speed and new features.\
+13.11.2023 - Update to Matlab app version to improve compatibility with Matlab 2020, 2021.
 
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
