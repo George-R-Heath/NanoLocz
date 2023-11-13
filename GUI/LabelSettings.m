@@ -4,7 +4,7 @@ allfigs = findall(0,'Type', 'figure');
 app2Handle = findall(allfigs, 'Name', 'NanoLocz');
 
 % Ensures data is sent to already open NanoLocz window
-app.mainApp = app2Handle.RunningAppInstance;
+app.mainApp = app2Handle(1).RunningAppInstance;
             
     % Create the main figure
     fig = uifigure('Name', 'Label Settings', 'Position', [200, 200, 270, 200]);
