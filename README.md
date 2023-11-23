@@ -6,11 +6,11 @@
 Atomic Force Microscopy Analysis Platform.
 
 31.10.2023 - Full version released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
-Includes several updates to file openers, stability, speed and new features.\
+Includes several updates to file openers, stability, speed and new features.
 
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
-height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here](NanoLocz-User-Guide.md)
+height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](NanoLocz-User-Guide.md)
 
 **Capabilities:**
 * Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
@@ -27,6 +27,7 @@ height data from AFM and HS-AFM imaging with the aim of increasing throughput. s
 
 **Compatible file types:**  .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy.... more being added\
 please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
+## [Link to User Guide](NanoLocz-User-Guide.md)
 
 ## NanoLocz Install - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases):
 
