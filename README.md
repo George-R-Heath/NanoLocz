@@ -8,7 +8,7 @@
 Atomic Force Microscopy Analysis Platform.
 
 23.11.2023 - Preprint Released on BioRxiv - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
-31.10.2023 - Full Software version 1.0 released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
+Full Software version 1.0 released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
 Includes several updates to file openers, stability, speed and new features.
 
 ## About NanoLocz
