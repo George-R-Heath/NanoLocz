@@ -1,14 +1,16 @@
 # NanoLocz User Guide
 ## Contents
-1.	[NanoLocz Install](#nanoLocz-install)
-2.	[Graphical User Interface](#graphical-user-interface) 
-3.	[Video Guides](#video-guides)
-4.	[Opening Files](#opening-files)
-5.	[Saving NanoLocz Files](#saving-nanoLocz-files)
-6.	[Exporting Images, Videos and Data](#exporting-images,-videos-and-data)
-7.	[Keyboard Shortcuts](#keyboard-shortcuts)
+[1. NanoLocz Install](#1-nanolocz-install)\
+[2. Graphical User Interface](#2-graphical-user-interface)\
+[3. Video Guides](#3-video-guides)\
+[4. Opening Files](#4-opening-files)\
+[5. Saving NanoLocz Files](#5-saving-nanolocz-files)\
+[6. Exporting Images, Videos and Data](#6-exporting-images-videos-and-data)\
+[7. Keyboard Shortcuts](#7-keyboard-shortcuts)
 
-## NanoLocz Install - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases):
+## 1. NanoLocz Install
+- Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases)
+  
 Note: loading on start-up of the app can take ~1min for Mac/Windows versions\
 Options for Install:
 1. Install as Mac desktop app download: Mac_AppInstaller_mcr.app.zip
@@ -28,7 +30,7 @@ Once installed the app can be used from the apps tab. For quick access right cli
 \
 ![NanoLocz Guide 2](https://github.com/George-R-Heath/NanoLocz/assets/90329395/896b5bdf-26e9-4072-8e20-9fe6a0e98178)
 
-## 3. Video Guides (Youtube Links to be added)
+## 3. Video Guides
 ### 3.1 Desktop standalone app Installation 
 ### 3.2 MATLAB app Installation
 ### 3.3 Getting Started 
