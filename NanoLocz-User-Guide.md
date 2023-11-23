@@ -37,9 +37,9 @@ Once installed the app can be used from the apps tab. For quick access right cli
 ### 3.6 Intercalating Trace-Retrace + Single particle LAFM
 ### 3.7 Simulation AFM and Time Resolved LAFM
 
-## 4. Opening Files
+## 4. Opening Files <img src=icons/open.png width="35">
 ### 4.1 General image opening
-* Select a working folder using ‘File’ -> ‘Open’ -> ‘Folder’ or press the Folder icon
+* Select a working folder using ‘File’ -> ‘Open’ -> ‘Folder’ or press the Folder icon <img src=icons/open.png width="20">
 * To open a file choose from the filenames in the selected working folder ‘File List Box’ displayed in green text.
 * If there are multiple channels available to open (eg. Height, Phase ect) these will be displayed as options in the channels dropdown box above the File List Box panel.
 
@@ -65,13 +65,13 @@ Once installed the app can be used from the apps tab. For quick access right cli
 * Stack: Adds the next file or channel selected in series with the current image/video
 * Intercalate: Alternates current frames will new frames, useful for assembling trace-retrace into a single movie. 
 
-## 5. Saving NanoLocz Files
+## 5. Saving NanoLocz Files <img src=icons/save.png width="35">
 The following describes saving options for Session Files or Current File such that the analysis and image processing can be quickly reopened in NanoLocz (or MATLAB since files are saved as .mat files), for exporting images/videos or data files see Section 3. Exporting Images and Videos
 When saving a session or current file, All analysis, references images, LAFM images and the levelled frames are saved. To save space ‘particle images’ are not saved but assembled upon opening using the x, y, t coordinates saved from the analysis
 
 ### 5.1 Saving/Loading ‘All Processed’ (Session)
 * Using the dropdown next to the save floppy disk icon select ‘All Processed’
-* Press save floppy disk
+* Press save <img src=icons/save.png width="20"> 
 * Saves all processed images/movies and analysis in the current session into a single file
 * Sessions can be reloaded as an option when selecting the ‘Working Folder’ (see 1.1).
 
@@ -80,23 +80,22 @@ Tip: to remove a file from the processed list, press ‘Restore’ on the Level 
 
 ### 5.2 Saving/Loading ‘Current File’ (single movie/image)
 * Using the dropdown next to the save floppy disk icon select ‘‘Current File’
-* Press save floppy disk
+* Press save <img src=icons/save.png width="20"> 
 * Saves current processed image/movie and analysis into a single file
 * Can be opened as a single image from the file list
 
 ## 6. Exporting Images, Videos and Data
-
 ### 6.1 Image and Video export
-
-Option 1:
+**Option 1:**
 * Select ‘Plot 1’ (left image panel) or ‘Plot 2’ (right Image panel) from the dropdown box
+![export](https://github.com/George-R-Heath/NanoLocz/assets/90329395/b5143548-f448-4614-9816-6bf05a907b9a)
 * Select the desired format from the dropdown box (.tiff, .csv, .txt, .xls, gif, .avi, .png, .jpeg or .pdf)
 * Press the Export button, then select file name and save location.
 * Don’t close the image window that pops up until after the file has saved
 
 Note: Exporting as .tiff, .csv, .txt, or .xls enables export without loss of image information whereas export as .gif, .avi, .png, .jpeg or .pdf gives movies/images at presentation or publication quality with automatic scale bars and timestamps. 
 
-Option 2 (good for creating publication quality figures or grabbing images quickly):
+**Option 2** (good for creating publication quality figures or grabbing images quickly):
 * Press the Pop Out button
 * Resize the image 
 * Go to the top right hand side of the image and select the far left button from the toolbar
