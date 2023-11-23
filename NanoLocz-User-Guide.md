@@ -9,16 +9,19 @@
 [7. Keyboard Shortcuts](#7-keyboard-shortcuts)
 
 ## 1. NanoLocz Install
-- Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases)
-  
-Note: loading on start-up of the app can take ~1min for Mac/Windows versions\
+To download the file needed go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases)
+
 Options for Install:
-1. Install as Mac desktop app download: Mac_AppInstaller_mcr.app.zip
-2. Install as Windows desktop app download: Windows_AppInstaller_mcr.exe
-3. Install as MATLAB app download: NanoLocz.mlappinstall
+1. To install as **Mac desktop app** download: Mac_AppInstaller_mcr.app.zip\
+Unzip and run the exe to install
+2. To install as **Windows desktop app** download: Windows_AppInstaller_mcr.exe\
+Unzip and run the exe to install
+3. To install as **MATLAB app** download: NanoLocz.mlappinstall\
 Open 'NanoLocz.mlappinstall' file. This will open MATLAB if not already open and ask you to install. 
 Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to Favourites and/or Quick Access Toolbar.\
 **MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Bioinformatics Toolbox, Computer Vision Toolbox.
+
+Note: loading on start-up of the app can take ~1min for Mac/Windows versions
 
 ## 2. Graphical User Interface 
 ### Fig 1: Image loading, leveling, filtering and mask tools:
@@ -41,8 +44,9 @@ Once installed the app can be used from the apps tab. For quick access right cli
 
 ## 4. Opening Files
 ### 4.1 General image opening
-* Select a working folder using ‘File’ -> ‘Open’ -> ‘Folder’ or press the Folder icon <img src=icons/open.png width="20">
+* Select a working folder - press the Folder icon <img src=icons/open.png width="30"> or go to ‘File’ -> ‘Open’ -> ‘Folder’
 * To open a file choose from the filenames in the selected working folder ‘File List Box’ displayed in green text.
+* Use arrows to quickly move up <img src=icons/up.png width="15"> or down  <img src=icons/down.png width="15"> folder levels
 * If there are multiple channels available to open (eg. Height, Phase ect) these will be displayed as options in the channels dropdown box above the File List Box panel.
 
 ### 4.2 Opening Videos
@@ -73,7 +77,7 @@ When saving a session or current file, All analysis, references images, LAFM ima
 
 ### 5.1 Saving/Loading ‘All Processed’ (Session)
 * Using the dropdown next to the save floppy disk icon select ‘All Processed’
-* Press save <img src=icons/save.png width="20"> 
+* Press save <img src=icons/save.png width="25"> 
 * Saves all processed images/movies and analysis in the current session into a single file
 * Sessions can be reloaded as an option when selecting the ‘Working Folder’ (see 1.1).
 
@@ -82,7 +86,7 @@ Tip: to remove a file from the processed list, press ‘Restore’ on the Level 
 
 ### 5.2 Saving/Loading ‘Current File’ (single movie/image)
 * Using the dropdown next to the save floppy disk icon select ‘‘Current File’
-* Press save <img src=icons/save.png width="20"> 
+* Press save <img src=icons/save.png width="25"> 
 * Saves current processed image/movie and analysis into a single file
 * Can be opened as a single image from the file list
 
@@ -98,12 +102,13 @@ Tip: to remove a file from the processed list, press ‘Restore’ on the Level 
 Note: Exporting as .tiff, .csv, .txt, or .xls enables export without loss of image information whereas export as .gif, .avi, .png, .jpeg or .pdf gives movies/images at presentation or publication quality with automatic scale bars and timestamps. 
 
 **Option 2** (good for creating publication quality figures or grabbing images quickly):
-* Press the Pop Out button
+* Press the Pop Out button <img src=icons/pop.png width="20">
 * Resize the image 
 * Go to the top right hand side of the image and select the far left button from the toolbar
-* For making figures choose ‘Copy as vector graphic’ Or for quickly copying an image choose ‘Copy as image’, the image can then be pasted into another program. 
+* For making figures choose ‘Copy as vector graphic’ Or for quickly copying an image choose ‘Copy as image’, the image can then be pasted into another program.
 * Once pasted vector files can be ungrouped to enable movement and formatting of any labels (eg. scale bars, timestamps…) 
-* Only works for single images
+* Only works for single images\
+   ![snip](https://github.com/George-R-Heath/NanoLocz/assets/90329395/bf909586-d6b3-4c50-82ae-9ce813b126c6)
 
 ### 6.2 Analysis data export
 * Open the data Viewer 
