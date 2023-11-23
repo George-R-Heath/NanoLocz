@@ -37,7 +37,7 @@ Once installed the app can be used from the apps tab. For quick access right cli
 ### 3.6 Intercalating Trace-Retrace + Single particle LAFM
 ### 3.7 Simulation AFM and Time Resolved LAFM
 
-## 4. Opening Files <img src=icons/open.png width="35">
+## 4. Opening Files
 ### 4.1 General image opening
 * Select a working folder using ‘File’ -> ‘Open’ -> ‘Folder’ or press the Folder icon <img src=icons/open.png width="20">
 * To open a file choose from the filenames in the selected working folder ‘File List Box’ displayed in green text.
@@ -65,7 +65,7 @@ Once installed the app can be used from the apps tab. For quick access right cli
 * Stack: Adds the next file or channel selected in series with the current image/video
 * Intercalate: Alternates current frames will new frames, useful for assembling trace-retrace into a single movie. 
 
-## 5. Saving NanoLocz Files <img src=icons/save.png width="35">
+## 5. Saving NanoLocz Files
 The following describes saving options for Session Files or Current File such that the analysis and image processing can be quickly reopened in NanoLocz (or MATLAB since files are saved as .mat files), for exporting images/videos or data files see Section 3. Exporting Images and Videos
 When saving a session or current file, All analysis, references images, LAFM images and the levelled frames are saved. To save space ‘particle images’ are not saved but assembled upon opening using the x, y, t coordinates saved from the analysis
 
