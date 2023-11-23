@@ -1,12 +1,12 @@
 # NanoLocz User Guide
 ## Contents
-1.	[NanoLocz Install](#NanoLocz-Install)
-2.	[Graphical User Interface](#Graphical-User-Interface) 
-3.	[Video Guides](#Video-Guides)
-4.	[Opening Files](#Opening-Files)
-5.	[Saving NanoLocz Files](#Saving-NanoLocz-Files)
-6.	[Exporting Images, Videos and Data](#Exporting-Images,-Videos-and-Data)
-7.	[Keyboard Shortcuts](#Keyboard-Shortcuts)
+1.	[NanoLocz Install](#nanoLocz-install)
+2.	[Graphical User Interface](#graphical-user-interface) 
+3.	[Video Guides](#video-guides)
+4.	[Opening Files](#opening-files)
+5.	[Saving NanoLocz Files](#saving-nanoLocz-files)
+6.	[Exporting Images, Videos and Data](#exporting-images,-videos-and-data)
+7.	[Keyboard Shortcuts](#keyboard-shortcuts)
 
 ## NanoLocz Install - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases):
 Note: loading on start-up of the app can take ~1min for Mac/Windows versions\
