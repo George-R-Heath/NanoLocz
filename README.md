@@ -1,11 +1,14 @@
 
 [![View NanoLocz on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/154880-nanolocz)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Static Badge](https://img.shields.io/badge/DOI%3A-10.1101%2F2023.11.23.568405-orange?link=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F2023.11.23.568405v1)](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1)
+
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
-31.10.2023 - Full version released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
+23.11.2023 - Preprint Released on BioRxiv - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
+31.10.2023 - Full Software version 1.0 released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
 Includes several updates to file openers, stability, speed and new features.
 
 ## About NanoLocz
@@ -63,10 +66,15 @@ Distributed under the terms of the [GNU GPL v3.0] license,
 "NanoLocz" is free and open source software
 
 ## Publications
-   * If using the Localization Atomic Force Microscopy method please cite:\
-[Heath, G.R., Kots, E., Robertson, J.L. et al. Localization atomic force microscopy. Nature 594, 385–390 (2021)]
+* If using the NanoLocz software please cite:\
+[Heath, G.R, Micklethwaite, E. and Storer, T.M.\
+NanoLocz: Image analysis platform for AFM, high-speed AFM and localization AFM.\
+bioRxiv 2023.11.23.568405 (2023)](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) 
 
-A preprint describing the *NanoLocz* workflow will be uploaded soon... 
+* If using the Localization Atomic Force Microscopy method please cite:\
+[Heath, G.R., Kots, E., Robertson, J.L. et al.\
+Localization atomic force microscopy.\
+ Nature 594, 385–390 (2021)](https://doi.org/10.1038/s41586-021-03551-x)
 
 [GNU GPL v3.0]: http://www.gnu.org/licenses/gpl-3.0.txt
 [Heath, G.R., Kots, E., Robertson, J.L. et al. Localization atomic force microscopy. Nature 594, 385–390 (2021)]: https://doi.org/10.1038/s41586-021-03551-x
