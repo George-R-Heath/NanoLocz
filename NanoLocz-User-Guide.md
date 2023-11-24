@@ -41,10 +41,19 @@ Note: loading on start-up of the app can take ~1min for Mac/Windows versions
 [![YouTube MATLAB app Installation](https://img.youtube.com/vi/155rN7DYzu4/0.jpg)](https://m.youtube.com/watch?v=155rN7DYzu4)
 
 ### 3.3 Getting Started 
+[![YouTube NanoLocz Getting Started](https://img.youtube.com/vi/dX4VoURMAcQ/0.jpg)](https://www.youtube.com/watch?v=dX4VoURMAcQ)
+
 ### 3.4 Leveling + Area Analysis
+[![YouTube NanoLocz Leveling + Area Analysis](https://img.youtube.com/vi/R5D6T04M7Rc/0.jpg)](https://www.youtube.com/watch?v=R5D6T04M7Rc)
+
 ### 3.5 Height + Width Analysis
+[![YouTube NanoLocz Height + Width Analysis](https://img.youtube.com/vi/k-a4NOc2hak/0.jpg)](https://www.youtube.com/watch?v=k-a4NOc2hak)
+
 ### 3.6 Intercalating Trace-Retrace + Single particle LAFM
+[![YouTube NanoLocz Single particle LAFM](https://img.youtube.com/vi/90s_B0XYHmI/0.jpg)](https://www.youtube.com/watch?v=90s_B0XYHmI)
+
 ### 3.7 Simulation AFM and Time Resolved LAFM
+Coming Soon
 
 ## 4. Opening Files
 ### 4.1 General image opening
