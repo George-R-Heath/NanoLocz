@@ -35,7 +35,11 @@ Note: loading on start-up of the app can take ~1min for Mac/Windows versions
 
 ## 3. Video Guides
 ### 3.1 Desktop standalone app Installation 
+[![YouTube Desktop standalone app Installation](https://img.youtube.com/vi/EfYbIf45AHo/0.jpg)](https://m.youtube.com/watch?v=EfYbIf45AHo)
+
 ### 3.2 MATLAB app Installation
+[![YouTube MATLAB app Installation](https://img.youtube.com/vi/155rN7DYzu4/0.jpg)](https://m.youtube.com/watch?v=155rN7DYzu4)
+
 ### 3.3 Getting Started 
 ### 3.4 Leveling + Area Analysis
 ### 3.5 Height + Width Analysis
