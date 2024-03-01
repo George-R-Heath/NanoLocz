@@ -1,12 +1,19 @@
 
 [![View NanoLocz on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/154880-nanolocz)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Static Badge](https://img.shields.io/badge/DOI%3A-10.1101%2F2023.11.23.568405-orange?link=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F2023.11.23.568405v1)](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1)
+[![Static Badge](https://img.shields.io/badge/DOI%3A-10.1002%2Fsmtd.202301766-orange?style=flat&cacheSeconds=https%3A%2F%2Fdoi.org%2F10.1002%2Fsmtd.202301766)]( https://doi.org/10.1002/smtd.202301766)
 
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
+01.03.2024 - [Full Article Released in Small Methods](https://doi.org/10.1002/smtd.202301766) \
+01.03.2024 - Version 1.1 Released with updates:
+* General: bug fixes, more colormaps, stacking of images/video with different pixel dimensions/
+* File Openers: .asd file heights corrected. 
+* Simulation AFM: Parachuting option added.
+* LAFM: Improved localization precision, improved auto centre for symmetrisation, height scale in nm.
+* New filter: remove scars/scratches.
 23.11.2023 - Preprint Released on BioRxiv - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
 Full Software version 1.0 released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
 Includes several updates to file openers, stability, speed and new features.
