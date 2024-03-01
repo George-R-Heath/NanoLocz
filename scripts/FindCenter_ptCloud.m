@@ -1,8 +1,8 @@
 function [center_translation] = FindCenter_ptCloud(fold, input_img, locs)
 sd = size(input_img);
 
-locs_1(:,1) =  locs(:,1) - sd(1)/2;
-locs_1(:,2) =  locs(:,2) - sd(2)/2;
+locs_1(:,1) =  locs(:,1) - sd(2)/2;
+locs_1(:,2) =  locs(:,2) - sd(1)/2;
 locs_1(:,3) = locs(:,3);
 
 

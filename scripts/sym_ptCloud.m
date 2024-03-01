@@ -2,8 +2,8 @@
 function sym_locs = sym_ptCloud(fold, input_img, Locs)
 
 sd = size(input_img);
-Locs(:,1) =  Locs(:,1) - sd(1)/2;
-Locs(:,2) =  Locs(:,2) - sd(2)/2;
+Locs(:,1) =  Locs(:,1) - sd(2)/2;
+Locs(:,2) =  Locs(:,2) - sd(1)/2;
 sym_locs = Locs;
 for i=1:(fold-1)
     locs_rotated = Locs;
@@ -17,5 +17,5 @@ for i=1:(fold-1)
 sym_locs = [sym_locs; locs_rotated];
 end
 
-sym_locs(:,1) =  sym_locs(:,1) + sd(1)/2;
-sym_locs(:,2) =  sym_locs(:,2) + sd(2)/2;
+sym_locs(:,1) =  sym_locs(:,1) + sd(2)/2;
+sym_locs(:,2) =  sym_locs(:,2) + sd(1)/2;

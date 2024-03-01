@@ -22,6 +22,13 @@ switch method
         min_max = multithresh(img,2);
         imgt = (img<=min_max(2)).*(img>=min_max(1));
         imgt(imgt==0) = NaN;
+        % wind = 1:100:size(img,1);
+        % for i = 1:numel(wind)-1
+        %     min_max(2) = multithresh(img(wind(i):wind(i+1),:),1);
+        %     min_max(1) = -inf;
+        %     imgt(wind(i):wind(i+1),:) = (img(wind(i):wind(i+1),:)<=min_max(2)).*(img(wind(i):wind(i+1),:)>=min_max(1));
+        % end
+        % imgt(imgt==0) = NaN;
 
     case 'line_step'
         for j =1:size(img,1)
