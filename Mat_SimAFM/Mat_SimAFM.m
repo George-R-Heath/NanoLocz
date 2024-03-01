@@ -10,7 +10,11 @@ coords_s(:,3) = coords(:,3);
 coords_s(:,1) = coords(:,1).*pix_per_ang;
 coords_s(:,2) = coords(:,2).*pix_per_ang;
 
-if pix_per_ang>3
+%select method depedning on sampling, if high sampling then all atom method
+%is best since. At lower sampling more atoms will reside in the same pixel
+
+%%high sampling method (standard)
+if pix_per_ang>3  
     img = zeros(end_pos(1,2)-end_pos(1,1)+1,end_pos(2,2)-end_pos(2,1)+1);
     for i=1:numel(coords(:,3))
         offs_x =  round(coords_s(i,1))-coords_s(i,1);
@@ -35,7 +39,8 @@ if pix_per_ang>3
             end
         end
     end
-else
+% At lower sampling method
+else 
 
     img = ones(end_pos(1,2)-end_pos(1,1)+1,end_pos(2,2)-end_pos(2,1)+1);
     edg = 2;
@@ -58,7 +63,7 @@ else
         pos1 = coords_s(:,2) >= y(jj) & coords_s(:,2) <= (y(jj) + 1);
         pos2 = coords_s(:,1) >= x(jj) & coords_s(:,1) <= (x(jj) + 1);
         pos = pos1.*pos2>0;
-        if sum(pos)>0
+        if sum(pos)>0 % if atom is highest in that pixel space calculate the surface otherwise skip 
             maxZ = max(coords_s(pos,3));
             found_coords = coords_s(pos,:);
             for jjj=1:sum(pos)

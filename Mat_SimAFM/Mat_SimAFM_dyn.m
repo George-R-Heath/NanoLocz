@@ -15,7 +15,7 @@ for k = 1:n
     coords_s(:,3) = coords(:,3)+randn(numel(coords(:,3)),1)*fluct_z;
     coords_s(:,1) = coords(:,1).*pix_per_ang + randn(numel(coords(:,3)),1)*fluct_xy*pix_per_ang;
     coords_s(:,2) = coords(:,2).*pix_per_ang + randn(numel(coords(:,3)),1)*fluct_xy*pix_per_ang;
-    
+     [coords_s(:,1),coords_s(:,2),coords_s(:,3)] = prevent_clash(2.8,coords_s(:,1),coords_s(:,2),coords_s(:,3));
     img = zeros(end_pos(1,2)-end_pos(1,1)+1,end_pos(2,2)-end_pos(2,1)+1);
     
     for i=1:numel(coords(:,3))
