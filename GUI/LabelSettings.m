@@ -16,12 +16,9 @@ app.mainApp = app2Handle(1).RunningAppInstance;
     % Create labels for scalebar color and position
     uilabel(fig, 'Text', 'Scale Bar', 'Position', [80, 175, 120, 22],'FontWeight', 'bold');
     uilabel(fig, 'Text', 'Time Stamp', 'Position', [180, 175, 120, 22],'FontWeight', 'bold');
-    
     uilabel(fig, 'Text', 'Color', 'Position', [25, 155, 120, 22],'FontWeight', 'bold');
-    
     uilabel(fig, 'Text', 'Position', 'Position', [10, 130, 120, 22],'FontWeight', 'bold');
   
-    
    
    % uilabel(fig, 'Text', 'Position:', 'Position', [120, 130, 120, 22],'FontWeight', 'bold');
     
@@ -48,7 +45,20 @@ app.mainApp = app2Handle(1).RunningAppInstance;
         'Items', positionOptions, ...
         'Position', [160, 80, 100, 70], ...
         'ValueChangedFcn', @onTimescalePositionChanged);
-    
+
+        % Create dropdown for timescale position
+    timescalePositionDropdown = uilistbox(fig, ...
+        'Items', positionOptions, ...
+        'Position', [160, 80, 100, 70], ...
+        'ValueChangedFcn', @onTimescalePositionChanged);
+
+    ZerotimescaleButton = uicontrol(fig, ...
+        'Style', 'pushbutton', ...
+        'String', ' Zero timescale', ...
+        'Position', [160, 40, 100, 30], ... % [left bottom width height]
+        'Callback', @buttonCallback); % Define a callback function
+
+
     function onScalebarColorChanged(src, ~)
         selectedColor = src.Value;
         app.mainApp.LabelColor(selectedColor,'scalebar')
@@ -68,4 +78,10 @@ app.mainApp = app2Handle(1).RunningAppInstance;
         selectedPosition = src.Value;
         app.mainApp.LabelPosition(selectedPosition,'timestamp')
     end
+
+    function buttonCallback(~, ~)
+        app.mainApp.ImageInfo.time = app.mainApp.ImageInfo.time - app.mainApp.ImageInfo.time(1);
+     app.mainApp.updatePlot('normal')
+    end
+
 end
