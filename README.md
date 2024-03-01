@@ -7,13 +7,15 @@
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
 
-01.03.2024 - [Full Article Released in Small Methods](https://doi.org/10.1002/smtd.202301766) \
-01.03.2024 - Version 1.1 Released with updates:
-* General: bug fixes, more colormaps, stacking of images/video with different pixel dimensions/
+**01.03.2024 - Full Article Released in *Small Methods*:** [https://doi.org/10.1002/smtd.202301766](https://doi.org/10.1002/smtd.202301766) 
+
+**01.03.2024 - NanoLocz Version 1.10 Update:**
+* General: bug fixes, more colormaps, stacking of images/video with different pixel dimensions.
 * File Openers: .asd file heights corrected. 
 * Simulation AFM: Parachuting option added.
 * LAFM: Improved localization precision, improved auto centre for symmetrisation, height scale in nm.
 * New filter: remove scars/scratches.
+  
 23.11.2023 - Preprint Released on BioRxiv - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
 Full Software version 1.0 released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
 Includes several updates to file openers, stability, speed and new features.
@@ -76,7 +78,7 @@ Distributed under the terms of the [GNU GPL v3.0] license,
 * If using the NanoLocz software please cite:\
 [Heath, G.R, Micklethwaite, E. and Storer, T.M.\
 NanoLocz: Image analysis platform for AFM, high-speed AFM and localization AFM.\
-bioRxiv 2023.11.23.568405 (2023)](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) 
+*Small Methods* 2024, 2301766.](https://doi.org/10.1002/smtd.202301766) 
 
 * If using the Localization Atomic Force Microscopy method please cite:\
 [Heath, G.R., Kots, E., Robertson, J.L. et al.\
