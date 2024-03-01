@@ -7,11 +7,8 @@ xtra = 20;
 
 app.Part.Image = padarray(app.Part.Image,[xtra/2, xtra/2],0,'both');
 
-if ~app.MultiReferenceCheckBox.Value
-    n = numel(Part.Locs(:,1));
-else
-    n = numel(Part(:,1));
-end    
+n = numel(Part.Locs(:,1));
+
 cla(app.loadbar)
 stepsPerUpdate = ceil(n * (updateInterval / 100));
 rectangle(app.loadbar, 'Position', [0, 0, 1, 1], 'FaceColor', 'none', 'EdgeColor', 'black');

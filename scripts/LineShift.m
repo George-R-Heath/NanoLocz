@@ -47,10 +47,16 @@ switch type
 
         bins = min(shift_i):1:max(shift_i);
         fo = fitoptions('method','NonlinearLeastSquares',...
-            'StartPoint',[30,0,20], 'Lower', [0, -40, 1], 'Upper', [1000,40,50]);
+            'StartPoint',[30,0,20], 'Lower', [0, -20, 1], 'Upper', [1000,20,50]);
         [hy, x] = hist(shift_i,bins);
-        gfit  = fit(x',hy','gauss1',fo);
+        try
+        gfit  = fit(x',hy','gauss1',fo); 
         shift = -round(gfit.b1);
+        catch
+         [mx, id] = max(hy);
+         shift = -round(x(id));
+        end
+       
     otherwise
         shift = type;
 end
@@ -66,7 +72,7 @@ elseif shift<0
     result(2:2:end,-shift+1:end)= im(2:2:end,:,1);
     result =   imcrop( result,[round(abs(shift/2)) 0 size(im,2)-1 size(im,1) ]);
 else
-    result = im;
+    result = double(im);
 end
 
 end

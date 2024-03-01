@@ -80,7 +80,8 @@ switch line_plane
     case 'med_line'
         %   r = r - median(imgt.*r,2,'omitnan');
         for i =1:size(img,1)
-            pos = imgt(i,:)>0;
+          %  pos = imgt(i,:)>0;
+            pos = ~isnan(imgt(i,:));
             if sum(pos)>5
                 y1 = img(i,pos);
                 r(i,:) = img(i,:) - median(y1);

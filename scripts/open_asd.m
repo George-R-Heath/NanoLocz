@@ -16,7 +16,7 @@ function [ im, header ] = open_asd(fname)
 % Written by Grigory Tagiltsev in Simon Scheuring's lab, Dec 2018
 % 
 
-asd_file = fopen(fname);
+asd_file = fopen(fname,'r', 'l');
 
 header.fileVersion = fread(asd_file, 1,'int'); %File version
 header.fileHeaderSize = fread(asd_file, 1,'int'); %Size of the file header
@@ -66,7 +66,6 @@ header.BB = char(header.comment);
 %Make image sequence
 preIm = zeros(header.yPixel, header.xPixel, header.numberFramesCurrent);
 for k=1:header.numberFramesCurrent
-    
     %Frame header structure
     header.frameNumber(k) = fread(asd_file, 1, 'int'); %Frame number
     header.frameMaxData(k) = fread(asd_file, 1, 'short'); %Maximum data in the frame
@@ -82,12 +81,8 @@ for k=1:header.numberFramesCurrent
     preIm(:,:,k) = reshape(sub,[header.xPixel,header.yPixel]).'; % CHANGE HERE IF THE IMAGE HAS WRONG DIMENSIONS
 end
 
+im=-preIm/205.*header.zExtCoef;
 
-
-
-% Invert the image contrast, because Z-piezo extension is the opposite to
-% the sample height
-im=4096-preIm;
 im = flip(im);
-
+fclose(asd_file);
 end

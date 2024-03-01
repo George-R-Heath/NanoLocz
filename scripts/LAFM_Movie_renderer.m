@@ -1,5 +1,5 @@
 
-function [LAFM_Mov, zlims, time] = LAFM_Movie_renderer(locs, img_gus, expand, fullcolormap, prob, colorlimits, window, slide)
+function [LAFM_Mov, zlims, time] = LAFM_Movie_renderer(locs, img_gus, expand, fullcolormap, prob, colorlimits,colorlimit_mode, window, slide)
 %colorlimits = [lower, upper], default = [0, 1], example = [0.1, 0.9] will
 %saturate the lowest 10% and highest 10% of heights to the bottom/top of
 %the colormap
@@ -38,11 +38,20 @@ for i = 1:n
 end
 
 [X, Y] = meshgrid(1:imageSize(2), 1:imageSize(1));
-range = max(explocs(:,3)) - min(explocs(:,3));
-normalizedLocsValue = (explocs(:,3) - min(explocs(:,3)))/range;
-zlims(1) = colorlimits(1).*range+min(explocs(:,3));
-zlims(2) = colorlimits(2).*range +min(explocs(:,3));
-colorIndex = round(interp1(linspace(colorlimits(1), colorlimits(2), size(colormapping, 1)), 1:size(colormapping, 1), normalizedLocsValue, 'linear', 'extrap'));
+
+switch colorlimit_mode
+    case 'Max Min'
+        colorlimits(1) = round(min(explocs(:,3)),3,"significant");
+        colorlimits(2) = round(max(explocs(:,3)),3,"significant");
+    case 'Exc outliers'
+        B = rmoutliers(explocs(:,3),"mean");
+        colorlimits(1) = round(min(B(:)),3,"significant");
+        colorlimits(2) = round(max(B(:)),3,"significant");
+    case 'Manual'
+end
+zlims = [colorlimits(1), colorlimits(2)];
+colorIndex = round(interp1(linspace(colorlimits(1), colorlimits(2), size(colormapping, 1)), 1:size(colormapping, 1), explocs(:,3), 'linear', 'extrap'));
+
 correction = zeros(5,5); correction(3,3) = 1; correction = imgaussfilt(correction,img_gus*expand/2);
 correction = max(correction(:));
 
@@ -54,7 +63,7 @@ for jj = 1:n
     end
 Movlocs =  explocs(MovPos,:);
 Mov_color = colorIndex(MovPos);
-  time(jj) = mean(Movlocs(:,7));
+  time(jj) = min(Movlocs(:,7));
     for i = 1:numel(colormapping(:,1))
         render = zeros(imageSize(1),imageSize(2));
         if i ==1
