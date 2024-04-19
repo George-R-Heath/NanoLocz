@@ -2,6 +2,8 @@
 [![View NanoLocz on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/154880-nanolocz)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Static Badge](https://img.shields.io/badge/DOI%3A-10.1002%2Fsmtd.202301766-orange?style=flat&cacheSeconds=https%3A%2F%2Fdoi.org%2F10.1002%2Fsmtd.202301766)]( https://doi.org/10.1002/smtd.202301766)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
+
 
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
