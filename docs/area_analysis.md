@@ -3,6 +3,6 @@ layout: default
 title: Area Analysis
 ---
 
-# Area Analysis
+# Area Analysis  (In Progress)
 
-This section explains area analysis in NanoLocz.
+This section will explain area analysis in NanoLocz.
