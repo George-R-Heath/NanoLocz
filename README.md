@@ -8,13 +8,14 @@
 Atomic Force Microscopy Analysis Platform.
 
 **15.05.2024 - NanoLocz Version 1.20 Update:**
-* **AutoSaving** - choose output folder and preferred file format 1st
-* **Improved Saving** - including batch export
-* **Batch levelling** - set levelling options (auto or manual) in preview mode and then run batch save
-* **HDF5 (.h5) export/input** - a more accessible file format (can be opened with Python)
+* **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
+* **AutoSaving** - Choose output folder and preferred file format 1st
+* **Improved Saving** - Including batch export
+* **Batch levelling** - Set levelling options (auto or manual) in preview mode and then run batch save
+* **HDF5 (.h5) export/input** - A more accessible file format (can be opened with Python)
 * **Set Preferences** - NanoLocz remembers preferred Output/Input folders and other settings
-* **Processing speed** - improved app startup speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
-* **Jpk file opener** error fixed
+* **Jpk file opener** - Error fixed
+* **asd file opener** - Reading of 'Only Trace Imaging' files enabled 
 * **Line Profile snap to angle** - Hold 'shift' when drawing line profiles to snap to the nearest 45 degrees 
 * **New pre-set auto levelling options** 
 * **Recalculate correlation button** - recalculates the correlation between particles and the selected reference image, useful for excluding poorly matching particles after Fine Align (Fine align tab)
