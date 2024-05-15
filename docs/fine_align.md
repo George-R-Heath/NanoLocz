@@ -3,6 +3,6 @@ layout: default
 title: Fine Align
 ---
 
-# Fine Align
+# Fine Align (In Progress)
 
-This section covers the fine align feature in NanoLocz.
+This section will cover the fine align feature in NanoLocz.
