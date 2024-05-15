@@ -1,20 +1,16 @@
 %  DESCRIPTION:   Function written for NanoLocz: Localization Atomic Force Microscopy Analysis Platform
 %  AUTHOR:        George Heath, University of Leeds,   g.r.heath@leeds.ac.uk,   30.06.2023         
 
-function Result = ConstructParticleStack2(app, ImageTarget, ref, Part)
+function Result = ConstructParticleStack2(app, ImageTarget, ref, Part, quick)
 updateInterval = 5;
 xtra = 20;
-
 app.Part.Image = padarray(app.Part.Image,[xtra/2, xtra/2],0,'both');
-
 n = numel(Part.Locs(:,1));
-
 cla(app.loadbar)
 stepsPerUpdate = ceil(n * (updateInterval / 100));
 rectangle(app.loadbar, 'Position', [0, 0, 1, 1], 'FaceColor', 'none', 'EdgeColor', 'black');
 progressBar = rectangle(app.loadbar, 'Position', [0, 0, 0, 1], 'FaceColor', 'green');
 progressText = text(app.loadbar, 0.5, 0.5, '0%', 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');
-
     img_pad = padarray(ImageTarget,[round(ref.position(4))+xtra, round(ref.position(3))+xtra],0,'both');
 
     if rem(ref.position(4),2)==0
@@ -49,15 +45,19 @@ progressText = text(app.loadbar, 0.5, 0.5, '0%', 'HorizontalAlignment', 'center'
 
         shifty = round(Part.Locs(i,2)+ref.position(4)/2+dy1)-(Part.Locs(i,2)+ref.position(4)/2+dy1);
         shiftx = round(Part.Locs(i,1)+ref.position(3)/2+dx1)-(Part.Locs(i,1)+ref.position(3)/2+dx1);
-        try
-            tform = rigidtform2d(-Part.Locs(i,8),[shiftx, shifty]);
-            sameAsInput = affineOutputView(size(Result(:,:,i)),tform,"BoundsStyle","CenterOutput");
-            Result(:,:,i) = imwarp(Result(:,:,i),tform,"OutputView",sameAsInput,'interp','bicubic');
-        catch
+        if quick == 0
+            try
+                tform = rigidtform2d(-Part.Locs(i,8),[shiftx, shifty]);
+                sameAsInput = affineOutputView(size(Result(:,:,i)),tform,"BoundsStyle","CenterOutput");
+                Result(:,:,i) = imwarp(Result(:,:,i),tform,"OutputView",sameAsInput,'interp','bicubic');
+            catch
+                Result(:,:,i) = imrotate(Result(:,:,i), Part.Locs(i,8), 'crop');
+                Result(:,:,i) = imtranslate(Result(:,:,i), [shiftx, shifty] );
+            end
+        else
             Result(:,:,i) = imrotate(Result(:,:,i), Part.Locs(i,8), 'crop');
             Result(:,:,i) = imtranslate(Result(:,:,i), [shiftx, shifty] );
         end
-
 
         if mod(i, stepsPerUpdate) == 0 || i == n
             progressBar.Position(3) = i / n;

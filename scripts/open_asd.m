@@ -1,6 +1,4 @@
 
-function [ im, header ] = open_asd(fname)
-
 % read_asd reads ASD files.
 % ASD files contains the header and 12-bit HS-AFM images. 
 % 
@@ -14,7 +12,9 @@ function [ im, header ] = open_asd(fname)
 %           header - .asd header; type - matlab structure
 %
 % Written by Grigory Tagiltsev in Simon Scheuring's lab, Dec 2018
-% 
+% Updated by G.R.Heath April 2024
+
+function [im, header] = open_asd(fname)
 
 asd_file = fopen(fname,'r', 'l');
 
@@ -72,10 +72,11 @@ for k=1:header.numberFramesCurrent
     header.frameMinData(k) = fread(asd_file, 1, 'short'); %Minimum data in the frame
     header.xOffset(k) = fread(asd_file, 1, 'short'); %X offset (nm)
     header.dataType(k) = fread(asd_file, 1, 'short'); %data type
-    header.xTilt(k) = fread(asd_file, 1, 'float'); %X tilt
-    header.yTilt(k) = fread(asd_file, 1, 'float'); %Y tilt
-    header.flagLaserIr(k) = fread(asd_file, 1, 'bool', 11); %Flag laser radiation
-    
+     header.xTilt(k) = fread(asd_file, 1, 'float'); %X tilt
+     header.yTilt(k) = fread(asd_file, 1, 'float'); %Y tilt
+     header.flagLaserIr(k) = fread(asd_file, 1, 'bool', header.frameHeaderSize-21); %Flag laser radiation
+
+
     %Frame data order
     sub = fread(asd_file, header.xPixel*header.yPixel, 'short');
     preIm(:,:,k) = reshape(sub,[header.xPixel,header.yPixel]).'; % CHANGE HERE IF THE IMAGE HAS WRONG DIMENSIONS
@@ -85,4 +86,5 @@ im=-preIm/205.*header.zExtCoef;
 
 im = flip(im);
 fclose(asd_file);
+
 end
