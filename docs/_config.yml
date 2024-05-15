@@ -1,0 +1,6 @@
+title: NanoLocz User Guide
+description: Comprehensive guide for using NanoLocz
+baseurl: "/NanoLocz/docs" # Adjust if needed based on the repository name and path
+url: "https://yourusername.github.io" # Your GitHub Pages URL
+theme: minima # You can use other themes as well
+markdown: kramdown
