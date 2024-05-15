@@ -4,10 +4,20 @@
 [![Static Badge](https://img.shields.io/badge/DOI%3A-10.1002%2Fsmtd.202301766-orange?style=flat&cacheSeconds=https%3A%2F%2Fdoi.org%2F10.1002%2Fsmtd.202301766)]( https://doi.org/10.1002/smtd.202301766)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
 
-
-
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform.
+
+**15.05.2024 - NanoLocz Version 1.20 Update:**
+* **AutoSaving** - choose output folder and preferred file format 1st
+* **Improved Saving** - including batch export
+* **Batch levelling** - set levelling options (auto or manual) in preview mode and then run batch save
+* **HDF5 (.h5) export/input** - a more accessible file format (can be opened with Python)
+* **Set Preferences** - NanoLocz remembers preferred Output/Input folders and other settings
+* **Processing speed** - improved app startup speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
+* **Jpk file opener** error fixed
+* **Line Profile snap to angle** - Hold 'shift' when drawing line profiles to snap to the nearest 45 degrees 
+* **New pre-set auto levelling options** 
+* **Recalculate correlation button** - recalculates the correlation between particles and the selected reference image, useful for excluding poorly matching particles after Fine Align (Fine align tab)
 
 **01.03.2024 - Full Article Released in *Small Methods*:** [https://doi.org/10.1002/smtd.202301766](https://doi.org/10.1002/smtd.202301766) 
 
