@@ -5,7 +5,8 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
-Atomic Force Microscopy Analysis Platform.
+Atomic Force Microscopy Analysis Platform.\
+[Go to **Releases** to download the latest version](https://github.com/George-R-Heath/NanoLocz/releases).
 
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
@@ -29,9 +30,8 @@ Atomic Force Microscopy Analysis Platform.
 * LAFM: Improved localization precision, improved auto centre for symmetrisation, height scale in nm.
 * New filter: remove scars/scratches.
   
-23.11.2023 - Preprint Released on BioRxiv - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
-Full Software version 1.0 released - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version \
-Includes several updates to file openers, stability, speed and new features.
+**23.11.2023 - Preprint Released on BioRxiv** - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
+**Full Software version 1.0 released**
 
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
