@@ -1,4 +1,7 @@
 # NanoLocz User Guide
+
+An in progress updated User Guide for NanoLocz v1.20 is [here](https://george-r-heath.github.io/NanoLocz/docs/) 
+
 ## Contents
 [1. NanoLocz Install](#1-nanolocz-install)\
 [2. Graphical User Interface](#2-graphical-user-interface)\
