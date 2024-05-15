@@ -7,8 +7,8 @@ title: Keyboard Shortcuts
 
 This section lists the keyboard shortcuts available in NanoLocz.
 
-May need to click the grey background of NanoLocz GUI for key shortcuts to register 
-(Keyboard shortcuts only work when a button/dropdown or panel are not selected).
+You may need to click the grey background of NanoLocz GUI for key shortcuts to register 
+(Keyboard shortcuts may only work when a button/dropdown or panel are not selected).
 |Keyboard Key|Result|
 |:----|:----|
 |Return|Accept current preview|
@@ -20,3 +20,5 @@ May need to click the grey background of NanoLocz GUI for key shortcuts to regis
 |Shift + Up arrow|Decrease z-scale range|
 |Shift + Down arrow|Increase z-scale range|
 |Shift whilst drawing line|Round angle to nearest 45 degrees|
+
+Feel free to suggest new shortcuts for future versions of NanoLocz.
