@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to NanoLocz User Guide
+# Welcome to NanoLocz User Guide <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 
 This guide will help you get started with using the NanoLocz app.
 
