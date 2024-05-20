@@ -11,7 +11,7 @@ This section explains how to save data in NanoLocz. Data can either be saved/pro
 ## 1. Save or Batch Process Data
 The following describes saving and batch processing options so that data can be quickly reopened in NanoLocz or other software.
 
-### Batch Save 
+### Single or Batch Save 
 - To save one or multiple files open the Save Options using save <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="25">
 - Select the format, to retain all image and analysis data use combined file format options. To access the images and data analysis in other software use separate Image/video and Analysis tables formats.
 - Select Files to save using the Save dropdown box:\
@@ -30,7 +30,6 @@ The following describes saving and batch processing options so that data can be 
 
 ### Format Options 
 ![Format table](https://github.com/George-R-Heath/NanoLocz/assets/90329395/dd2755a1-09c7-4d26-9dbc-4ee9ce17c5db)
-
 
 ### AutoSave
 By turning on AutoSave - files will automatically be saved to the output folder according to the settings in Preferences. To change these setting - open the preferences window using the Cog icon or Settings option. 
