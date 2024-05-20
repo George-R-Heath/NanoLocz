@@ -15,7 +15,6 @@ body {
   padding: 0;
 }
 
-/* Header */
 header {
   background: #333; /* Dark grey background */
   color: #fff; /* White text */
@@ -28,59 +27,43 @@ header h1 a {
   text-decoration: none;
 }
 
-header nav ul {
+.content-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sidebar {
+  background: #444; /* Slightly lighter grey for the sidebar */
+  color: #fff; /* White text */
+  padding: 1rem;
+  width: 200px;
+  min-height: 100vh; /* Full height */
+}
+
+.sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 1rem;
+.sidebar ul li {
+  margin: 1rem 0;
 }
 
-header nav ul li a {
+.sidebar ul li a {
   color: #fff; /* White text */
   text-decoration: none;
-  font-weight: bold;
 }
 
-header nav ul li a:hover {
+.sidebar ul li a:hover {
   color: #ff8c00; /* Orange text on hover */
 }
 
-/* Main Content */
-main {
+main.content {
   padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  flex: 1;
   background: #fff; /* White background for the content area */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Headings */
-main h1, main h2, main h3 {
-  margin-bottom: 1rem;
-  color: #ff8c00; /* Orange color for headings */
-}
-
-main h1 {
-  border-bottom: 2px solid #ff8c00; /* Orange underline for main heading */
-  padding-bottom: 0.5rem;
-}
-
-main h2 {
-  color: #32cd32; /* Lime green for secondary headings */
-}
-
-/* Links */
-a {
-  color: #ff8c00; /* Orange color for links */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* Footer */
@@ -89,9 +72,6 @@ footer {
   padding: 1rem 0;
   background: #333; /* Dark grey background */
   color: #fff; /* White text */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 /* Code Blocks */
@@ -101,6 +81,21 @@ pre {
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
+}
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.pink-text {
+  color: pink;
 }
 
 /* Inline Code */
@@ -140,12 +135,16 @@ th {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header nav ul li {
-    display: block;
-    margin: 0.5rem 0;
+  .content-wrapper {
+    flex-direction: column;
   }
 
-  main {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  main.content {
     padding: 1rem;
   }
 }
