@@ -5,14 +5,13 @@ title: Getting Started
 
 # Getting Started with NanoLocz (v1.2)
 
+![startup](https://github.com/George-R-Heath/NanoLocz/assets/90329395/fdc193f1-b746-474a-8b3c-4d792244e074)
+
 ## Set your preferences
 Let’s set up your NanoLocz settings such that the next time you open the app your preferred input/output folder and other settings will be preloaded.
 * Step 1: Select a data folder, to save time later this might be your main raw data folder that might have subfolders containing data from different imaging days - press the Folder icon <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/9ed0f385-3cf8-415e-a539-d2e45b511eab" width="30"> or go to ‘File’ -> ‘Open’ -> ‘Folder’
 
-![startup](https://github.com/George-R-Heath/NanoLocz/assets/90329395/fdc193f1-b746-474a-8b3c-4d792244e074)
-
 * Step 2: Go to _Preferences_ and select *cd* for both *Start Folder* and *Output Folder* to set these to the same as the current Open Folder or select different locations. You can also select the default Colour map and export settings here.
-
 
 ![pref](https://github.com/George-R-Heath/NanoLocz/assets/90329395/e888bcc0-7718-41e0-b49f-5d6b96c2337e)
 
@@ -23,7 +22,9 @@ Let’s set up your NanoLocz settings such that the next time you open the app y
 * If there are multiple channels available to open (eg. Height, Phase ect) these will be displayed as options in the channels dropdown box above the File List Box panel.
 
 ### Opening Videos
-* Depending on the file structure, videos can be opened by selecting a single file (for .aris and .asd file types) otherwise a video can be assembled by selecting a folder containing the single image files to be assembled into a movie. 
+* Depending on the file structure, videos can be opened by selecting a single file (for .aris and .asd file types) otherwise a video can be assembled by selecting a folder containing the single image files to be assembled into a movie.
+![folder](https://github.com/George-R-Heath/NanoLocz/assets/90329395/77a43b94-c40f-4263-990d-e50897948a86)
+
 * The software can only assemble images into a movie if the images have the same pixel numbers in x and y (eg. a stack of 512 x 512 pixel images), non-conforming images are excluded.   
 
 ### Supported File Types
