@@ -4,12 +4,22 @@ title: Saving Data
 ---
 
 # Saving Data
-This section explains how to save data in NanoLocz. Data can either be saved/processed in bulk and for later use using the [Save Data](#1-save-data) or using [Export Images, Videos and Data](#2-exporting-images-videos-and-data) to export the current views in the plots for figures/presentations.
+This section explains how to save data in NanoLocz. Data can either be saved/processed in bulk and for later use or by exporting the current views in the plots for figures/presentations.\
+[Save or Batch Process Data](#1-save-or-batch-process-data)\
+[Export Images, Videos and Data](#2-exporting-images-videos-and-data) 
 
-## 1. Save Data
-The following describes saving options image data and analysis so that can be quickly reopened in NanoLocz or other software.
+## 1. Save or Batch Process Data
+The following describes saving and batch processing options so that data can be quickly reopened in NanoLocz or other software.
+
+### Format Options 
+* Combined format: Saving of image/video and analysis saved as a single file. Both formats can be reopened by NanoLocz\
+**.h5** HDF5 (Hierarchical Data Format version 5) saves all data in a structured format (images, tables, metadata), enabling easy access and analysis with tools like Python.\
+**.mat** Saves all data in a structured format as MATLAB variables, allowing direct opening with MATLAB for data analysis and processing.
+* Image/Video format: Saving of image/video data as a single file.
+* Analysis tables format: Saving of Particle detection, Area analysis, Localizations
+
 ### AutoSave
-By turning on AutoSave files will automatically be saved to the output folder according to the settings in Preferences. To change these setting - open the preferences window using the Cog icon or Settings option. 
+By turning on AutoSave - files will automatically be saved to the output folder according to the settings in Preferences. To change these setting - open the preferences window using the Cog icon or Settings option. 
 ![pref](https://github.com/George-R-Heath/NanoLocz/assets/90329395/ee3f646d-4075-405f-afeb-ada44420036f)
 
 ### Batch Save 
