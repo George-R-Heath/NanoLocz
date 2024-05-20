@@ -82,6 +82,21 @@ pre {
   border-radius: 8px;
   overflow-x: auto;
 }
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.pink-text {
+  color: pink;
+}
 
 /* Inline Code */
 code {
