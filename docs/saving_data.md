@@ -9,7 +9,7 @@ This section explains how to save data in NanoLocz. Data can either be saved/pro
 [2. Export Images, Videos and Data](#2-exporting-images-videos-and-data) 
 
 ## 1. Save or Batch Process Data
-The following describes saving and batch processing options so that data can be quickly reopened in NanoLocz or other software.
+The following describes saving and batch processing options so that raw and processed data can be quickly reopened in NanoLocz or other software. See section 2 for export of images / movies for publication quality figures or presentations. 
 
 ### Single or Batch Save 
 - To save one or multiple files open the Save Options using save <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="25">
@@ -36,6 +36,7 @@ By turning on AutoSave - files will automatically be saved to the output folder 
 ![pref](https://github.com/George-R-Heath/NanoLocz/assets/90329395/ee3f646d-4075-405f-afeb-ada44420036f)
 
 ## 2. Exporting Images, Videos and Data
+This section describes how to export data based on the current view - useful for publication quality figures, presentations, or exporting raw data in manual way. See section 1 for batch export options. 
 ### 2.1 Image and Video export
 **Option 1:**
 * Select ‘Plot 1’ (left image panel) or ‘Plot 2’ (right Image panel) from the dropdown box
