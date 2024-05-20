@@ -5,26 +5,36 @@ title: Saving Data
 
 # Saving Data
 This section explains how to save data in NanoLocz. Data can either be saved/processed in bulk and for later use or by exporting the current views in the plots for figures/presentations.\
-[Save or Batch Process Data](#1-save-or-batch-process-data)\
-[Export Images, Videos and Data](#2-exporting-images-videos-and-data) 
+[1. Save or Batch Process Data](#1-save-or-batch-process-data)\
+[2. Export Images, Videos and Data](#2-exporting-images-videos-and-data) 
 
 ## 1. Save or Batch Process Data
 The following describes saving and batch processing options so that data can be quickly reopened in NanoLocz or other software.
 
+### Batch Save 
+- To save one or multiple files open the Save Options using save <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="25">
+- Select the format, to retain all image and analysis data use combined file format options. To access the images and data analysis in other software use separate Image/video and Analysis tables formats.
+- Select Files to save using the Save dropdown box:\
+**Current File:** Selects the currently open image\
+**All Files:** Selects all files in the open folder\
+**All Processed:** Selects and displays only files that have been processed (levelled, filtered or analysed)\
+**Session:** Saves all processed data in a single .mat file which can be reopened in NanoLocz 
+- Use the checkboxes next to each file name to select which files to Save.
+- To level unprocessed data select the 'Level unprocessed data' option and images will be levelled using the current level settings in the main NanoLocz window.
+- Select the Output folder you want NanoLocz to save to.
+- Select subfolder preferences:\
+**Create a new subfolder:** Generates 1 subfolder in the Output folder with the name: ‘xxxxxxx NanoLocz Output’ where xxxxxx is the name of the current open folder. Recommended for general use.\
+**Create multiple subfolder(s):** Generates 1 subfolder per image/movie in the Output folder with the name: ‘Image Name’. Recommended if saving many separate tables and images.   
+- Press Save to run the save
+![save](https://github.com/George-R-Heath/NanoLocz/assets/90329395/c2e197c7-def9-4347-ba4b-89874aa0edaa)
+
 ### Format Options 
-* Combined format: Saving of image/video and analysis saved as a single file. Both formats can be reopened by NanoLocz\
-**.h5** HDF5 (Hierarchical Data Format version 5) saves all data in a structured format (images, tables, metadata), enabling easy access and analysis with tools like Python.\
-**.mat** Saves all data in a structured format as MATLAB variables, allowing direct opening with MATLAB for data analysis and processing.
-* Image/Video format: Saving of image/video data as a single file.
-* Analysis tables format: Saving of Particle detection, Area analysis, Localizations
+![Format table](https://github.com/George-R-Heath/NanoLocz/assets/90329395/dd2755a1-09c7-4d26-9dbc-4ee9ce17c5db)
+
 
 ### AutoSave
 By turning on AutoSave - files will automatically be saved to the output folder according to the settings in Preferences. To change these setting - open the preferences window using the Cog icon or Settings option. 
 ![pref](https://github.com/George-R-Heath/NanoLocz/assets/90329395/ee3f646d-4075-405f-afeb-ada44420036f)
-
-### Batch Save 
-To save one or multiple files open the Save Options using save <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="25"> 
-![save](https://github.com/George-R-Heath/NanoLocz/assets/90329395/c2e197c7-def9-4347-ba4b-89874aa0edaa)
 
 ## 2. Exporting Images, Videos and Data
 ### 2.1 Image and Video export
