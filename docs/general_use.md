@@ -1,14 +1,30 @@
 ---
 layout: default
-title: General Use 
+title: YouTube Video Tutorials 
 ---
 
-# General Controls
+# YouTube Video Tutorials
 
-This section covers the general controls of NanoLocz.
+## Desktop standalone app Installation 
+[![YouTube Desktop standalone app Installation](https://img.youtube.com/vi/EfYbIf45AHo/0.jpg)](https://m.youtube.com/watch?v=EfYbIf45AHo)
 
-![NanoLocz Guide 2](https://github.com/George-R-Heath/NanoLocz/assets/90329395/896b5bdf-26e9-4072-8e20-9fe6a0e98178)
+## MATLAB app Installation
+[![YouTube MATLAB app Installation](https://img.youtube.com/vi/155rN7DYzu4/0.jpg)](https://m.youtube.com/watch?v=155rN7DYzu4)
 
-
-### YouTube video on Getting Started
+## Getting Started 
 [![YouTube NanoLocz Getting Started](https://img.youtube.com/vi/dX4VoURMAcQ/0.jpg)](https://www.youtube.com/watch?v=dX4VoURMAcQ)
+
+## Leveling + Area Analysis
+[![YouTube NanoLocz Leveling + Area Analysis](https://img.youtube.com/vi/R5D6T04M7Rc/0.jpg)](https://www.youtube.com/watch?v=R5D6T04M7Rc)
+
+## Height + Width Analysis
+[![YouTube NanoLocz Height + Width Analysis](https://img.youtube.com/vi/k-a4NOc2hak/0.jpg)](https://www.youtube.com/watch?v=k-a4NOc2hak)
+
+## Intercalating Trace-Retrace + Single particle LAFM
+[![YouTube NanoLocz Single particle LAFM](https://img.youtube.com/vi/90s_B0XYHmI/0.jpg)](https://www.youtube.com/watch?v=90s_B0XYHmI)
+
+## Time Resolved LAFM
+[![YouTube Time Resolved LAFM](https://img.youtube.com/vi/USl4qk6572U/0.jpg)](https://youtu.be/USl4qk6572U)
+
+## Simulation AFM
+[![YouTube Time Resolved LAFM](https://img.youtube.com/vi/xuxuxda7PgQ/0.jpg)](https://youtu.be/xuxuxda7PgQ)
