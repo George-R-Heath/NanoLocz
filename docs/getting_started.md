@@ -4,15 +4,13 @@ title: Getting Started
 ---
 
 <style>
-  .background-div {
-    background: url('docs/User Guide 1_2 background.png') no-repeat center center; 
-    background-size: cover;
-    padding: 20px;
-    color: white;
-  }
+
   body {
     background-color: black;
     color: white;
+    background-image: url('docs/User Guide 1_2 background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   a {
@@ -25,30 +23,40 @@ title: Getting Started
   padding-bottom: 5px; /* Adds space between the text and the border */
   }
 
-   table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+#afm-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-    color: white; /* White text color */
-  }
+#afm-table th, #afm-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 
-  th {
-    background-color: #111; /* Black background color for header */
-    color: white; /* White text color for header */
-  }
+#afm-table tr:nth-child(even) {
+  background-color: limegreen;
+}
 
-  tr:nth-child(odd) {
-    background-color: #333; /* Dark background color for odd rows */
-  }
+#afm-table tr:hover {
+  background-color: #ddd;
+}
 
-  tr:nth-child(even) {
-    background-color: #444; /* Slightly lighter dark background color for even rows */
-  }
+#afm-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.bruker {
+  background-color: #e6f7ff; /* Light blue background for Bruker™ */
+}
+
+.author-link {
+  color: #0645AD; /* Blue color for author/source links */
+}
 
 </style>
 
@@ -114,6 +122,91 @@ Files which are noted as 'Folder' in the Video Format column can be opened as a 
 |Nanosurf™|.nhf|✓|✓|✓|Folder| NanoLocz |
 | |.gyw|✓|✓|✓|Folder|[E. L. Fricke](https://uk.mathworks.com/matlabcentral/fileexchange/32893-gwyddion-file-importer)|
 |Park Systems™|.tiff|✓|x|✓|Single file|NanoLocz|
+
+<table id="afm-table">
+  <tr>
+    <th>AFM Manufacturer</th>
+    <th>Format Used</th>
+    <th>Read Height</th>
+    <th>Read All Channels</th>
+    <th>Video Support</th>
+    <th>Video Format</th>
+    <th>Author/Source</th>
+  </tr>
+  <tr>
+    <td class="bruker">Bruker™</td>
+    <td>.spm</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>Folder</td>
+    <td><a href="https://uk.mathworks.com/matlabcentral/fileexchange/11515-open-nanoscope-6-afm-images?tab=discussions" class="author-link">J. D. Groot</a></td>
+  </tr>
+  <tr>
+    <td class="bruker"></td>
+    <td>.jpk</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>Folder</td>
+    <td><a href="https://uk.mathworks.com/matlabcentral/fileexchange/68760-open_jpk" class="author-link">R. D. Ortuso</a></td>
+  </tr>
+  <tr>
+    <td>RIBM™</td>
+    <td>.asd</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>Single file</td>
+    <td>G. Tagiltsev & S. Scheuring</td>
+  </tr>
+  <tr>
+    <td>Oxford Instruments™</td>
+    <td>.aris</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>Single file</td>
+    <td>NanoLocz</td>
+  </tr>
+  <tr>
+    <td>Oxford Instruments™</td>
+    <td>.ibw</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>Folder</td>
+    <td><a href="https://uk.mathworks.com/matlabcentral/fileexchange/42679-igor-pro-file-format-ibw-to-matlab-variable" class="author-link">J. Bialek</a></td>
+  </tr>
+  <tr>
+    <td>Nanosurf™</td>
+    <td>.nhf</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>Folder</td>
+    <td>NanoLocz</td>
+  </tr>
+  <tr>
+    <td>Nanosurf™</td>
+    <td>.gyw</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>Folder</td>
+    <td><a href="https://uk.mathworks.com/matlabcentral/fileexchange/32893-gwyddion-file-importer" class="author-link">E. L. Fricke</a></td>
+  </tr>
+  <tr>
+    <td>Park Systems™</td>
+    <td>.tiff</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>Single file</td>
+    <td>NanoLocz</td>
+  </tr>
+</table>
+
 
 ### Stacking images/videos
 * Different images and movies can be stacked or intercalated if the images have the same pixel numbers in x and y using the dropdown box above the parameter table.
