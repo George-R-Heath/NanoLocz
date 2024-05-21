@@ -7,10 +7,6 @@ title: Home
   body {
     background-color: black;
     color: white;
-    background-image: url('docs/User Guide 1_2 background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
   }
 
   a {
@@ -33,5 +29,5 @@ title: Home
 <a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
 <a href="localize.html" style="color: pink;">Localize</a>\
 <a href="area_analysis.html" style="color: limegreen;">Area Analysis</a> - - <a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
-<a href="general_use.html">YouTube Video Tutorials</a> 
+<a href="simulation_afm.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use.html">YouTube Video Tutorials</a> 
 
