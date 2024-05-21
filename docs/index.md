@@ -2,9 +2,23 @@
 layout: default
 title: Home
 ---
-## NanoLocz User Guide
 
-## Sections
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  a {
+    color: lightblue;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+</style>
+
+## NanoLocz User Guide
 <a href="installation.html">Installation</a>\
 <a href="getting_started.html">Getting Started</a>\
 <a href="image_levelling.html" style="color: red;">Level</a>--
