@@ -5,9 +5,9 @@ title: Installation
 
 <style>
   .background-div {
-    background: url('https://github.com/George-R-Heath/NanoLocz/assets/90329395/cb7ed175-0dc4-4da8-8fde-9a281e2aa225') no-repeat center center; 
+    background: url('docs/User Guide 1_2 background.png') no-repeat center center; 
     background-size: cover;
-    padding: 10px;
+    padding: 20px;
     color: white;
   }
   body {
@@ -39,7 +39,7 @@ title: Installation
 
 # Installation of NanoLocz
 
-To download the file needed go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases).
+To download the file needed go to <a href="https://github.com/George-R-Heath/NanoLocz/releases" style="color: lightblue;">Releases</a>.
 Download one of the following files from `assets`.
 
 ### **Windows desktop app**

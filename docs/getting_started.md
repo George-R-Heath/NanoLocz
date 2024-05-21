@@ -5,9 +5,9 @@ title: Getting Started
 
 <style>
   .background-div {
-    background: url('https://github.com/George-R-Heath/NanoLocz/assets/90329395/cb7ed175-0dc4-4da8-8fde-9a281e2aa225') no-repeat center center; 
+    background: url('docs/User Guide 1_2 background.png') no-repeat center center; 
     background-size: cover;
-    padding: 10px;
+    padding: 20px;
     color: white;
   }
   body {
@@ -25,7 +25,7 @@ title: Getting Started
   padding-bottom: 5px; /* Adds space between the text and the border */
   }
 
-  table {
+   table {
     width: 100%;
     border-collapse: collapse;
   }
@@ -34,7 +34,7 @@ title: Getting Started
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-    color: white; /* Dark gray text color */
+    color: white; /* White text color */
   }
 
   th {
@@ -42,8 +42,12 @@ title: Getting Started
     color: white; /* White text color for header */
   }
 
+  tr:nth-child(odd) {
+    background-color: #333; /* Dark background color for odd rows */
+  }
+
   tr:nth-child(even) {
-    background-color: #333; 
+    background-color: #444; /* Slightly lighter dark background color for even rows */
   }
 
 </style>
