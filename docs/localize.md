@@ -33,3 +33,9 @@ title: Localize
 # Localize (In Progress)
 
 This section will explain how to localize particles in NanoLocz.
+
+## Intercalating Trace-Retrace + Single particle LAFM
+[![YouTube NanoLocz Single particle LAFM](https://img.youtube.com/vi/90s_B0XYHmI/0.jpg)](https://www.youtube.com/watch?v=90s_B0XYHmI)
+
+## Time Resolved LAFM
+[![YouTube Time Resolved LAFM](https://img.youtube.com/vi/USl4qk6572U/0.jpg)](https://youtu.be/USl4qk6572U)
