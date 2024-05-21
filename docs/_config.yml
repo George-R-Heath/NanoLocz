@@ -1,7 +1,7 @@
 title: NanoLocz User Guide
 description: A guide for using NanoLocz
 baseurl: "/NanoLocz/docs" # Adjust if needed based on the repository name and path
-url: "https://George-R-Heath.github.io" # Your GitHub Pages URL
+url: "https://George-R-Heath.github.io/docs" # Your GitHub Pages URL
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme # Add this line to the plugins list if you already have one
