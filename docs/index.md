@@ -18,12 +18,11 @@ title: Home
   border-bottom: 2px solid #FFA500; /* Bright orange border */
   padding-bottom: 5px; /* Adds space between the text and the border */
   }
-    img {
-    filter: brightness(0.5); /* Darkens the image background, not perfect */
-  }
+
 </style>
 
-## NanoLocz User Guide
+## NanoLocz User Guide <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/150b8294-71c0-4c98-990e-18f99f4992de" width="30">
+
 <a href="installation.html">Installation</a>\
 <a href="getting_started.html">Getting Started</a>\
 <a href="image_levelling.html" style="color: red;">Level</a> - - 
@@ -31,8 +30,11 @@ title: Home
 <a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
 <a href="localize.html" style="color: pink;">Localize</a>\
 <a href="area_analysis.html">Area Analysis</a>\
-<a href="saving_data.html">Saving Data</a> <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="20">\
+<a href="saving_data.html">Saving Data</a> <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/0af07a6b-148e-4944-bed8-2a8681e68178" width="20">\
 <a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
-<a href="general_use.html">YouTube Video Tutorials</a>  <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/af6c4dbe-df8f-4e80-817b-35d5e1773ce8" width="20">
+<a href="general_use.html">YouTube Video Tutorials</a> <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/156152ee-81ab-4b15-9237-e02efe8f0c21" width="20">
 
+![youtube-logo](https://github.com/George-R-Heath/NanoLocz/assets/90329395/156152ee-81ab-4b15-9237-e02efe8f0c21)
+
+![save](https://github.com/George-R-Heath/NanoLocz/assets/90329395/0af07a6b-148e-4944-bed8-2a8681e68178)
 
