@@ -8,9 +8,6 @@ title: Getting Started
   body {
     background-color: black;
     color: white;
-    background-image: url('docs/User Guide 1_2 background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   a {
@@ -35,11 +32,14 @@ title: Getting Started
 }
 
 #afm-table tr:nth-child(even) {
-  background-color: limegreen;
+  background-color: #222222;
+}
+  #afm-table tr:nth-child(odd) {
+  background-color: #3b3b3b;
 }
 
 #afm-table tr:hover {
-  background-color: #ddd;
+  background-color: #000000;
 }
 
 #afm-table th {
@@ -48,10 +48,6 @@ title: Getting Started
   text-align: left;
   background-color: #04AA6D;
   color: white;
-}
-
-.bruker {
-  background-color: #e6f7ff; /* Light blue background for Bruker™ */
 }
 
 .author-link {
@@ -112,16 +108,6 @@ Let’s set up your NanoLocz settings such that the next time you open the app y
 ### Supported File Types
 Files which are noted as 'Folder' in the Video Format column can be opened as a video by selecting the folder of files from the green/black File List.
 
-|AFM Manufacturer|Format Used|Read Height|Read All Channels|Video Support|Video Format|Author/Source|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:| 
-|Bruker™|.spm|✓|✓|✓|Folder|[J. D. Groot](https://uk.mathworks.com/matlabcentral/fileexchange/11515-open-nanoscope-6-afm-images?tab=discussions)|
-| |.jpk|✓|✓|✓|Folder|[R. D. Ortuso](https://uk.mathworks.com/matlabcentral/fileexchange/68760-open_jpk)|
-|RIBM™|.asd|✓|x|✓|Single file|G. Tagiltsev & S. Scheuring|
-|Oxford Instruments™|.aris|✓|✓|✓|Single file| NanoLocz |
-| |.ibw|✓|x|✓|Folder|[J. Bialek](https://uk.mathworks.com/matlabcentral/fileexchange/42679-igor-pro-file-format-ibw-to-matlab-variable)|
-|Nanosurf™|.nhf|✓|✓|✓|Folder| NanoLocz |
-| |.gyw|✓|✓|✓|Folder|[E. L. Fricke](https://uk.mathworks.com/matlabcentral/fileexchange/32893-gwyddion-file-importer)|
-|Park Systems™|.tiff|✓|x|✓|Single file|NanoLocz|
 
 <table id="afm-table">
   <tr>
