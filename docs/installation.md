@@ -39,7 +39,7 @@ title: Installation
 
 # Installation of NanoLocz
 
-To download the file needed go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases).
+To download the file needed go to <a href="https://github.com/George-R-Heath/NanoLocz/releases" style="color: lightblue;">Releases</a>.
 Download one of the following files from `assets`.
 
 ### **Windows desktop app**
