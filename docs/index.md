@@ -4,11 +4,6 @@ title: Home
 ---
 
 <style>
-
-    background: url('docs/User Guide 1_2 background.png') no-repeat center center; 
-    background-size: cover;
-
-
   body {
     background-color: black;
     color: white;
