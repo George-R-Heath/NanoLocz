@@ -58,4 +58,8 @@ The area analysis method in NanoLocz is based on calculating information within 
 ![area analysis](https://github.com/George-R-Heath/NanoLocz/assets/90329395/d4e472c4-8dff-43ac-ac53-575e519ca425)
 
 - This will open the plotter window where you can access the data tables and plot data either as frame averages/totals or individual particles per frame.
+  
 ![plotter](https://github.com/George-R-Heath/NanoLocz/assets/90329395/95f08392-cd0c-4625-84b4-a384b41f7935)
+
+## YouTube video on Leveling + Area Analysis
+[![YouTube NanoLocz Leveling + Area Analysis](https://img.youtube.com/vi/R5D6T04M7Rc/0.jpg)](https://www.youtube.com/watch?v=R5D6T04M7Rc)

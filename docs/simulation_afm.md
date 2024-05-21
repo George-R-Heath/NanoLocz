@@ -32,3 +32,4 @@ title: Simulation AFM
 <a href="simulation_afm.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use.html">YouTube Video Tutorials</a> 
 
 # Simulation AFM
+[![YouTube Time Resolved LAFM](https://img.youtube.com/vi/xuxuxda7PgQ/0.jpg)](https://youtu.be/xuxuxda7PgQ)
