@@ -4,13 +4,19 @@ title: Getting Started
 ---
 
 <style>
+  .background-div {
+    background: url('https://github.com/George-R-Heath/NanoLocz/assets/90329395/cb7ed175-0dc4-4da8-8fde-9a281e2aa225') no-repeat center center; 
+    background-size: cover;
+    padding: 10px;
+    color: white;
+  }
   body {
     background-color: black;
     color: white;
   }
 
   a {
-    color: lightblue;
+    color: white;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -19,21 +25,38 @@ title: Getting Started
   padding-bottom: 5px; /* Adds space between the text and the border */
   }
 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: white; /* Dark gray text color */
+  }
+
+  th {
+    background-color: #111; /* Black background color for header */
+    color: white; /* White text color for header */
+  }
+
+  tr:nth-child(even) {
+    background-color: #333; 
+  }
+
 </style>
 
-## NanoLocz User Guide <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/150b8294-71c0-4c98-990e-18f99f4992de" width="30">
+## NanoLocz User Guide <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/36d664a6-38e2-4405-b5cc-a962093cf13b" width="30">
 
-<a href="installation.html">Installation</a>\
-<a href="getting_started.html">Getting Started</a>\
+<a href="installation.html">Installation</a> - - <a href="getting_started.html">Getting Started</a> - - <a href="saving_data.html">Saving Data</a> \
 <a href="image_levelling.html" style="color: red;">Level</a> - - 
 <a href="particle_detection.html" style="color: lightblue;">Detect</a> - - 
 <a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
 <a href="localize.html" style="color: pink;">Localize</a>\
-<a href="area_analysis.html">Area Analysis</a>\
-<a href="saving_data.html">Saving Data</a> <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/0af07a6b-148e-4944-bed8-2a8681e68178" width="20">\
-<a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
-<a href="general_use.html">YouTube Video Tutorials</a> <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/156152ee-81ab-4b15-9237-e02efe8f0c21" width="20">
-
+<a href="area_analysis.html" style="color: limegreen;">Area Analysis</a> - - <a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
+<a href="general_use.html">YouTube Video Tutorials</a> 
 
 # Getting Started with NanoLocz
 [1. User Interface](#1-user-interface)\
@@ -46,9 +69,9 @@ title: Getting Started
 ![startup](https://github.com/George-R-Heath/NanoLocz/assets/90329395/fdc193f1-b746-474a-8b3c-4d792244e074)
 
 See individual help pages for help on:
-<a href="image_levelling.html" style="color: red;">Level</a>
-   <a href="particle_detection.html" style="color: blue;">Detect</a>
-   <a href="fine_align.html" style="color: orange;">FineAlign</a>
+<a href="image_levelling.html" style="color: red;">Level</a> - - 
+   <a href="particle_detection.html" style="color: lightblue;">Detect</a> - - 
+   <a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
     <a href="localize.html" style="color: pink;">Localize</a>
 
 ![NanoLocz Guide 2](https://github.com/George-R-Heath/NanoLocz/assets/90329395/896b5bdf-26e9-4072-8e20-9fe6a0e98178)
