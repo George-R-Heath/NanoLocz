@@ -10,20 +10,25 @@ title: Home
   }
 
   a {
-    color: lightblue;
+    color: white;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: #FFA500;
+  border-bottom: 2px solid #FFA500; /* Bright orange border */
+  padding-bottom: 5px; /* Adds space between the text and the border */
+  }
+    img {
+    filter: brightness(0.5); /* Darkens the image background, not perfect */
   }
 </style>
 
 ## NanoLocz User Guide
 <a href="installation.html">Installation</a>\
 <a href="getting_started.html">Getting Started</a>\
-<a href="image_levelling.html" style="color: red;">Level</a>--
-<a href="particle_detection.html" style="color: blue;">Detect</a>--
-<a href="fine_align.html" style="color: orange;">FineAlign</a>--
+<a href="image_levelling.html" style="color: red;">Level</a> - - 
+<a href="particle_detection.html" style="color: lightblue;">Detect</a> - - 
+<a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
 <a href="localize.html" style="color: pink;">Localize</a>\
 <a href="area_analysis.html">Area Analysis</a>\
 <a href="saving_data.html">Saving Data</a> <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="20">\
