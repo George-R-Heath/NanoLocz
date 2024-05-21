@@ -4,15 +4,18 @@ title: Home
 ---
 
 <style>
-  .background-div {
+
     background: url('docs/User Guide 1_2 background.png') no-repeat center center; 
     background-size: cover;
-    padding: 20px;
-    color: white;
-  }
+
+
   body {
     background-color: black;
     color: white;
+    background-image: url('docs/User Guide 1_2 background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 
   a {
