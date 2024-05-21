@@ -46,7 +46,7 @@ The ROI (region of interest) method uses image cross-correlation of a reference 
 -	Select ROI as the detection method
 -	Select a reference image using either of the following methods:\
 **Manual selection**: Select any of the <a style="color:orange"> Orange Square icons</a> and then manually draw a square around a representative particle in your AFM data. \
-**Simulated Selection**: Open Simulation AFM by selecting Tools -> Simulation AFM. Import the pdb of the expected structure. Orientate the molecule and alter the tip radius to match the expected orientation and tip size in the AFM images. Select ‘Export to NanoLocz’.
+**Simulated Selection**: Open Simulation AFM by selecting Tools -> Simulation AFM. Import the pdb of the expected structure. Orientate the molecule and alter the tip radius to match the expected orientation and tip size in the AFM images. Select ‘Export to NanoLocz’. More info on <a href="simulation_afm.html" style="color: orange;">Simulation AFM.</a> 
 -	Select <a style="color:red">Find Particles.</a> 
 
 ![ROI detect](https://github.com/George-R-Heath/NanoLocz/assets/90329395/ab594b69-2f8e-4e80-886d-1753d8cb570d)
