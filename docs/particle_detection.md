@@ -37,8 +37,8 @@ Two methods are implemented for particle detection using either template matchin
 
 [1. ROI Method](#1-roi-method)\
 [2. Peak Method](#2-peak-method)\
-[3. Particle Tracking](#3-particle-tracking)
-
+[3. Particle Tracking](#3-particle-tracking)\
+[4. YouTube Videos on Particle Analysis](#4-youtube-videos-on-particle-analysis)
 
 ## 1. ROI Method
 The ROI (region of interest) method uses image cross-correlation of a reference image with the full image or video data set to detect particles with high correlation.
@@ -90,3 +90,11 @@ The peak method of particle detection find local maxima above the **Min Height**
 **Max missing:** Maximum number of frame particle can go missing for and still be tracked as the same particle.
 
 Particle coordinates are input into the simpletracker algorithm (https://github.com/tinevez/simpletracker) to track particle positions over time. In brief particle pairs identified between frames as the closest (based on Euclidean distance) are connected to form links. Using the Hungarian algorithm the sum of these pair distances is minimized across all particles between successive frames. Subsequently, a second iteration examined track endings. If a track's start closely aligned with another track's end in the subsequent frames, a link spanning multiple frames is established, effectively bridging the gap and reestablishing the track. The method allows tracking to bridge a user defined number of frames where a particle is missing/undetected.
+
+## 4. YouTube Videos on Particle Analysis
+
+### Peaks Method for Height + Width Analysis
+[![YouTube NanoLocz Height + Width Analysis](https://img.youtube.com/vi/k-a4NOc2hak/0.jpg)](https://www.youtube.com/watch?v=k-a4NOc2hak)
+
+### ROI Method + Intercalating Trace-Retrace + Single particle LAFM
+[![YouTube NanoLocz Single particle LAFM](https://img.youtube.com/vi/90s_B0XYHmI/0.jpg)](https://www.youtube.com/watch?v=90s_B0XYHmI)
