@@ -8,6 +8,19 @@
 Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-r-heath.github.io/NanoLocz/docs/)\
 [Go to **Releases** to download the latest version](https://github.com/George-R-Heath/NanoLocz/releases).
 
+## About NanoLocz
+*NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
+height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](https://george-r-heath.github.io/NanoLocz/docs/)
+
+**Capabilities:**
+* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
+* Image Levelling - Line Profiling  - Image Alignment
+* Mask Analysis - Particle Detection - Single Particle Tracking
+* Simulation AFM - *Localization AFM* 
+* Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls, .h5
+
+please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
+## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
@@ -33,27 +46,6 @@ Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-
   
 **23.11.2023 - Preprint Released on BioRxiv** - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
 **Full Software version 1.0 released**
-
-## About NanoLocz
-*NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
-height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](https://george-r-heath.github.io/NanoLocz/docs/)
-
-**Capabilities:**
-* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
-* Image Levelling 
-* Line Profiling  
-* Video Alignment
-* Simulation AFM
-* Mask Analysis
-* Particle Detection (height or reference based)
-* Single Particle Tracking
-* Particle Alignment
-* *Localization AFM*
-* Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls
-
-**Compatible file types:**  .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy.... more being added\
-please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
-## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
 ## NanoLocz Install - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases):
 
