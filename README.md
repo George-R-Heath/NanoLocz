@@ -4,21 +4,6 @@
 [![Static Badge](https://img.shields.io/badge/DOI%3A-10.1002%2Fsmtd.202301766-orange?style=flat&cacheSeconds=https%3A%2F%2Fdoi.org%2F10.1002%2Fsmtd.202301766)]( https://doi.org/10.1002/smtd.202301766)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
 
-🎉 NanoLocz is Celebrating Its 1st Birthday! 🎉
-To mark this milestone, we’re hosting some User Meetings for new and experienced users (all are welcome). An open session to share tips, feedback, ask questions, or simply observe to see if it can help your own hashtag#AFM analysis. I will also give short outlook to future software update features coming soon.
-
-Please use the registration links below to access the Zoom links for different time options. (Sorry - registration just helps estimate attendance and plan the session)
-
-🗓 October 31st\
-**User Meeting 1:** 9:00 - 10:00 GMT \
-(10:00 CET, 14:30 IST🇮🇳, 17:00 CST🇨🇳, 18:00 JST🇯🇵)\
-[Register for Session 1](https://www.eventbrite.co.uk/e/1049458868727?aff=oddtdtcreator)
-
-**User Meeting 2:** 13:30 - 14:30 GMT\
-(14:30 CET, 9:30 ET🇺🇸, 6:30 PDT🇺🇸)\
-[Register for Session 2](https://www.eventbrite.co.uk/e/1049541475807?aff=oddtdtcreator)
-
-
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-r-heath.github.io/NanoLocz/docs/)\
 [Go to **Releases** to download the latest version](https://github.com/George-R-Heath/NanoLocz/releases).
