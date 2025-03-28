@@ -30,6 +30,6 @@ title: Fine Align
 <a href="area_analysis.html" style="color: limegreen;">Area Analysis</a> - - <a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
 <a href="simulation_afm.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use.html">YouTube Video Tutorials</a> 
 
-# Fine Align 
+# Fine Align
 
 ![Fine Align](https://github.com/George-R-Heath/NanoLocz/assets/90329395/a431c072-74e0-45af-9966-ca6333e21eb2)
