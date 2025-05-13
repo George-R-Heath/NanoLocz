@@ -1,5 +1,5 @@
-
 [![View NanoLocz on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/154880-nanolocz)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=George-R-Heath/NanoLocz)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Static Badge](https://img.shields.io/badge/DOI%3A-10.1002%2Fsmtd.202301766-orange?style=flat&cacheSeconds=https%3A%2F%2Fdoi.org%2F10.1002%2Fsmtd.202301766)]( https://doi.org/10.1002/smtd.202301766)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
@@ -8,6 +8,19 @@
 Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-r-heath.github.io/NanoLocz/docs/)\
 [Go to **Releases** to download the latest version](https://github.com/George-R-Heath/NanoLocz/releases).
 
+## About NanoLocz
+*NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
+height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](https://george-r-heath.github.io/NanoLocz/docs/)
+
+**Capabilities:**
+* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
+* Image Levelling - Line Profiling  - Image Alignment
+* Mask Analysis - Particle Detection - Single Particle Tracking
+* Simulation AFM - *Localization AFM* 
+* Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls, .h5
+
+please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
+## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
@@ -34,27 +47,6 @@ Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-
 **23.11.2023 - Preprint Released on BioRxiv** - [Link](https://www.biorxiv.org/content/10.1101/2023.11.23.568405v1) \
 **Full Software version 1.0 released**
 
-## About NanoLocz
-*NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
-height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](https://george-r-heath.github.io/NanoLocz/docs/)
-
-**Capabilities:**
-* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
-* Image Levelling 
-* Line Profiling  
-* Video Alignment
-* Simulation AFM
-* Mask Analysis
-* Particle Detection (height or reference based)
-* Single Particle Tracking
-* Particle Alignment
-* *Localization AFM*
-* Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls
-
-**Compatible file types:**  .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy.... more being added\
-please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
-## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
-
 ## NanoLocz Install - Go to [Releases](https://github.com/George-R-Heath/NanoLocz/releases):
 
 Note: loading on start-up of the app can take ~1min for Mac/Windows versions\
@@ -66,6 +58,7 @@ Open 'NanoLocz.mlappinstall' file. This will open MATLAB if not already open and
 Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to 
 Favourites and/or Quick Access Toolbar.\
 **MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Bioinformatics Toolbox, Computer Vision Toolbox.
+4. Install NanoLocz in MATLAB Online. Click [Open NanoLocz in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=George-R-Heath/NanoLocz) to clone NanoLocz into your Matlab online workspace. After cloning, open the latest mlappinstall install file (eg NanoLocz1.2.mlappinstall), install and then change the current folder by navigating to a different folder eg up one level to the repositories folder before running NanoLocz from the apps tab at the top of the page. Running NanoLocz whilst having the current folder set as the NanoLocz repository will give the following error: Function 'NanoLocz v1.2' in the current folder shadows the app entry point ...'
 
 ## Disclaimer:
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
