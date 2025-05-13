@@ -1,5 +1,4 @@
 [![View NanoLocz on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/154880-nanolocz)
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=George-R-Heath/NanoLocz)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Static Badge](https://img.shields.io/badge/DOI%3A-10.1002%2Fsmtd.202301766-orange?style=flat&cacheSeconds=https%3A%2F%2Fdoi.org%2F10.1002%2Fsmtd.202301766)]( https://doi.org/10.1002/smtd.202301766)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
@@ -58,7 +57,6 @@ Open 'NanoLocz.mlappinstall' file. This will open MATLAB if not already open and
 Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to 
 Favourites and/or Quick Access Toolbar.\
 **MATLAB app requirements:** MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Bioinformatics Toolbox, Computer Vision Toolbox.
-4. Install NanoLocz in MATLAB Online. Click [Open NanoLocz in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=George-R-Heath/NanoLocz) to clone NanoLocz into your Matlab online workspace. After cloning, open the latest mlappinstall install file (eg NanoLocz1.2.mlappinstall), install and then change the current folder by navigating to a different folder eg up one level to the repositories folder before running NanoLocz from the apps tab at the top of the page. Running NanoLocz whilst having the current folder set as the NanoLocz repository will give the following error: Function 'NanoLocz v1.2' in the current folder shadows the app entry point ...'
 
 ## Disclaimer:
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
