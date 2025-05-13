@@ -1,8 +1,12 @@
-name: Deploy user guide to GitHub Pages
+# Workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
+  # Runs on pushes to your main branch (change if needed)
   push:
-    branches: [ George-R-Heath-User-Guide ] # or your source branch
+    branches: ["main"]
+
+  # Allows manual trigger
   workflow_dispatch:
 
 permissions:
@@ -12,28 +16,26 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Build site
-        run: |
-          # Replace with your build step (e.g., Jekyll, MkDocs, manual copy)
-          mkdir -p _site
-          cp -r docs/* _site/
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-        with:
-          path: _site
 
   deploy:
     needs: build
