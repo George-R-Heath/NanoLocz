@@ -5,9 +5,11 @@ app.LAFM.z_low_thresh = min(app.LAFM.Locs(:,3));
 app.LAFM.z_high_thresh = max(app.LAFM.Locs(:,3));
 app.LAFM.pp_low_thresh = min(app.LAFM.Locs(:,4));
 app.LAFM.pp_high_thresh = max(app.LAFM.Locs(:,4));
+try
 app.LAFM.ccr_low_thresh = min(app.LAFM.Locs(:,8));
 app.LAFM.ccr_high_thresh = max(app.LAFM.Locs(:,8));
-
+catch
+end
 if sum(strcmp(app.HistogramDropDown.Items,'LAFM z')) <1
     app.HistogramDropDown.Items = [app.HistogramDropDown.Items , {'LAFM z'}];
 end
