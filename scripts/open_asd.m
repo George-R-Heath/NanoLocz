@@ -1,20 +1,20 @@
 
 % read_asd reads ASD files.
-% ASD files contains the header and 12-bit HS-AFM images. 
-% 
+% ASD files contains the header and 12-bit HS-AFM images.
+%
 %   PARAMETERS
 %
 %       INPUT
 %           fname - path and name of the .asd file; type - string
-% 
+%
 %       OUTPUT
 %           im - HS-AFM image or movie; type - double array
 %           header - .asd header; type - matlab structure
 %
 % Written by Grigory Tagiltsev in Simon Scheuring's lab, Dec 2018
-% Updated by G.R.Heath April 2024
+% Updated by G.R.Heath Sep 2024
 
-function [im, header] = open_asd(fname)
+function [im, header] = open_asd(fname,ch)
 
 asd_file = fopen(fname,'r', 'l');
 
@@ -63,28 +63,48 @@ header.comment = fread(asd_file, header.commentSize, '*char'); %Comment
 header.AA = char(header.operName);
 header.BB = char(header.comment);
 
+if header.dataTypeCh2>0
+    n = header.numberFramesCurrent*2;
+else
+    n = header.numberFramesCurrent;
+end
+
 %Make image sequence
-preIm = zeros(header.yPixel, header.xPixel, header.numberFramesCurrent);
-for k=1:header.numberFramesCurrent
+preIm = zeros(header.yPixel, header.xPixel, n);
+for k=1:n
     %Frame header structure
     header.frameNumber(k) = fread(asd_file, 1, 'int'); %Frame number
     header.frameMaxData(k) = fread(asd_file, 1, 'short'); %Maximum data in the frame
     header.frameMinData(k) = fread(asd_file, 1, 'short'); %Minimum data in the frame
     header.xOffset(k) = fread(asd_file, 1, 'short'); %X offset (nm)
     header.dataType(k) = fread(asd_file, 1, 'short'); %data type
-     header.xTilt(k) = fread(asd_file, 1, 'float'); %X tilt
-     header.yTilt(k) = fread(asd_file, 1, 'float'); %Y tilt
-     header.flagLaserIr(k) = fread(asd_file, 1, 'bool', header.frameHeaderSize-21); %Flag laser radiation
-
+    header.xTilt(k) = fread(asd_file, 1, 'float'); %X tilt
+    header.yTilt(k) = fread(asd_file, 1, 'float'); %Y tilt
+    header.flagLaserIr(k) = fread(asd_file, 1, 'bool', header.frameHeaderSize-21); %Flag laser radiation
 
     %Frame data order
     sub = fread(asd_file, header.xPixel*header.yPixel, 'short');
     preIm(:,:,k) = reshape(sub,[header.xPixel,header.yPixel]).'; % CHANGE HERE IF THE IMAGE HAS WRONG DIMENSIONS
 end
 
+
 im=-preIm/205.*header.zExtCoef;
 
 im = flip(im);
 fclose(asd_file);
+if header.dataTypeCh2>0
+    header.channels =  [{'Height'},{'Phase'}];
+    if strcmp(ch,'Phase')
+        im = im(:,:,(header.numberFramesCurrent+1):n);
+        header.Ch ='Phase';
+    else
+        im = im(:,:,1:header.numberFramesCurrent);
+        header.Ch ='Height';
+    end
+else
+    header.channels = [{'Height'}];
+    im = im(:,:,1:header.numberFramesCurrent);
+    header.Ch ='Height';
+end
 
 end

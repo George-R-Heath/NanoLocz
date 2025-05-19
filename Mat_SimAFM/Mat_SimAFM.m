@@ -88,6 +88,7 @@ else
                         pos_y = round(found_coords(jjj,2) + dyl(j)-end_pos(2)+1);
                         if img(pos_x, pos_y) < h(j)
                             img(pos_x, pos_y) = h(j);
+                         
                         end
 
                     end
