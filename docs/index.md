@@ -31,7 +31,7 @@ title: Home
 <a href="area_analysis.html" style="color: limegreen;">Area Analysis</a> - - <a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
 <a href="simulation_afm.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use.html">YouTube Video Tutorials</a> 
 
-# Version 1.3
+# Version 1.3 User guide in progress...
 <a href="installation.html">Installation</a> - - <a href="getting_started.html">Getting Started</a> - - <a href="saving_data.html">Saving Data</a> \
 <a href="image_levelling.html" style="color: red;">Level</a> - - 
 <a href="particle_detection.html" style="color: lightblue;">Detect</a> - - 
