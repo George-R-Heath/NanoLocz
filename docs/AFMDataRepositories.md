@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Online AFM Data Repositories
+title: AFM Data Repositories
 ---
 
 <style>
@@ -9,26 +9,19 @@ title: Online AFM Data Repositories
     color: white;
     font-family: Arial, sans-serif;
   }
-
-  a {
-    color: white;
-    text-decoration: underline;
-  }
-
+  a { color: white; text-decoration: underline; }
   h1, h2 {
     color: #FFA500;
     border-bottom: 2px solid #FFA500;
     padding-bottom: 5px;
     margin-top: 40px;
   }
-
   label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
   }
-
-  input[type="text"], textarea {
+  input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -37,25 +30,19 @@ title: Online AFM Data Repositories
     border: 1px solid #555;
     border-radius: 5px;
   }
-
   input[type="submit"] {
     margin-top: 20px;
     background-color: #04AA6D;
-    color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
   }
-
   input[type="submit"]:hover {
     background-color: #038f5d;
   }
-
   .repo-entry {
     margin-bottom: 20px;
   }
-
   .repo-entry strong {
     color: #04AA6D;
   }
@@ -63,11 +50,14 @@ title: Online AFM Data Repositories
 
 <h1>Online AFM Data Repositories</h1>
 
-<p>Know of a good dataset repo? Submit it here. It will appear below instantly. (Note: submissions aren’t saved on refresh.)</p>
-
 <form id="repoForm">
-  <label for="category">Category (e.g. Institutional, Community, Calibration)</label>
-  <input type="text" id="category" name="category" required>
+  <label for="category">Category</label>
+  <select id="category" name="category" required>
+    <option value="">-- Select Category --</option>
+    <option value="Bio-AFM Images">Bio-AFM Images</option>
+    <option value="High-Speed AFM Videos">High-Speed AFM Videos</option>
+    <option value="Material Images">Material Images</option>
+  </select>
 
   <label for="title">Repository Name</label>
   <input type="text" id="title" name="title" required>
@@ -83,52 +73,50 @@ title: Online AFM Data Repositories
 
 <hr>
 
-<h2>Institutional Repositories</h2>
-<div id="Institutional"></div>
+<h2>Bio-AFM Images</h2>
+<div id="Bio-AFM Images"></div>
 
-<h2>Community Platforms</h2>
-<div id="Community"></div>
+<h2>High-Speed AFM Videos</h2>
+<div id="High-Speed AFM Videos"></div>
 
-<h2>Calibration & Examples</h2>
-<div id="Calibration"></div>
+<h2>Material Images</h2>
+<div id="Material Images"></div>
 
 <script>
-  document.getElementById('repoForm').addEventListener('submit', function(e) {
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzL5EaQKr0WilFq8KyF_ldQGAUew36qN3JB2QHd73lt38iAuTY-qmOX_7a7OLjnnfVJ/exec"; // ← Replace with your Apps Script URL
+
+  document.getElementById('repoForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const category = document.getElementById('category').value.trim();
+    const category = document.getElementById('category').value;
     const title = document.getElementById('title').value.trim();
     const link = document.getElementById('link').value.trim();
     const desc = document.getElementById('desc').value.trim();
 
-    const newEntry = document.createElement('div');
-    newEntry.classList.add('repo-entry');
-    newEntry.innerHTML = `
+    // Add entry to page
+    const entry = document.createElement('div');
+    entry.classList.add('repo-entry');
+    entry.innerHTML = `
       <strong>${title}</strong><br>
       <a href="${link}" target="_blank">${link}</a><br>
       <em>${desc}</em>
     `;
+    document.getElementById(category).appendChild(entry);
 
-    // Decide where to insert the entry
-    const key = category.toLowerCase();
-    let container = null;
+    // Save to Google Sheets
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      body: JSON.stringify({ category, title, link, desc }),
+      headers: { 'Content-Type': 'application/json' }
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log("Submitted:", data);
+    })
+    .catch(error => {
+      console.error("Error submitting:", error);
+    });
 
-    if (key.includes('institution')) container = document.getElementById('Institutional');
-    else if (key.includes('community')) container = document.getElementById('Community');
-    else if (key.includes('calibration')) container = document.getElementById('Calibration');
-    else {
-      // Unknown category: create a new section
-      const newHeading = document.createElement('h2');
-      newHeading.textContent = category;
-      newHeading.id = category;
-      document.body.appendChild(newHeading);
-
-      container = document.createElement('div');
-      container.id = category;
-      document.body.appendChild(container);
-    }
-
-    container.appendChild(newEntry);
-    e.target.reset(); // Clear the form
+    e.target.reset();
   });
 </script>
