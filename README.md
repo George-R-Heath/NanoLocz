@@ -22,6 +22,21 @@ height data from AFM and HS-AFM imaging with the aim of increasing throughput. s
 please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
+**21.05.2025 - NanoLocz Version 1.30 Update:**
+
+- **Drag & Drop Support** – Quickly open files or folders by dragging them into the file list box.  
+- **Multi-Plane Levelling** – Enhanced levelling using weighted plane/line fits across multiple surfaces (code adapted from [SPIW](https://sourceforge.net/projects/spiw)).  
+- **Flexible Draw/Analysis Tools** – Apply line, circle, square or freehand drawing with analysis tools profiles, averages, ROIs, and masks.  
+- **Improved File Import** – Broader support for common table/image formats (`.csv`, `.jpg`, etc.); `.asd` now reads all channels; faster loading for large `.jpk` files.  
+- **Unified Histogram Slider** – One interface for controlling sliders used in masking, particle detection, and now LAFM.  
+- **Expanded LAFM Tools** – Auto-rendering, FRC resolution analysis, new filters, alignment tools, localization import/filtering.  
+- **Enhanced 3D Plotting** – Lighting controls and export bug fixes for 3D movie generation.  
+- **Improved Label Tools** – Time formatting options and ability to position labels off-image.  
+- **Transfer Detections** – Move particle detections between channels with one tool.  
+- **Dark/Light Mode Toggle** – Easily switch between UI themes.  
+- **More Auto-Save Options** – Greater control over automatic saving behavior.  
+- **General Bug Fixes**
+  
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
 * **AutoSaving** - Choose output folder and preferred file format 1st
