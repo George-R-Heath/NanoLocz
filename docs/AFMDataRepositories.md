@@ -1,7 +1,5 @@
----
-layout: default
-title: AFM Data Repositories
----
+<!-- layout: default -->
+<!-- title: AFM Repositories -->
 
 <style>
   body {
@@ -9,114 +7,139 @@ title: AFM Data Repositories
     color: white;
     font-family: Arial, sans-serif;
   }
-  a { color: white; text-decoration: underline; }
-  h1, h2 {
+
+  h1, h2, h3 {
     color: #FFA500;
     border-bottom: 2px solid #FFA500;
     padding-bottom: 5px;
-    margin-top: 40px;
   }
-  label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    background-color: #222;
+
+  a {
     color: white;
-    border: 1px solid #555;
-    border-radius: 5px;
+    text-decoration: underline;
   }
-  input[type="submit"] {
-    margin-top: 20px;
+
+  .category {
+    margin-top: 2em;
+  }
+
+  .repo-entry {
+    background-color: #222;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-left: 4px solid #04AA6D;
+  }
+
+  label, input, textarea, select, button {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  button {
     background-color: #04AA6D;
+    color: white;
     border: none;
-    border-radius: 8px;
+    padding: 10px;
     cursor: pointer;
   }
-  input[type="submit"]:hover {
-    background-color: #038f5d;
-  }
-  .repo-entry {
-    margin-bottom: 20px;
-  }
-  .repo-entry strong {
-    color: #04AA6D;
+
+  button:hover {
+    background-color: #038c59;
   }
 </style>
 
-<h1>Online AFM Data Repositories</h1>
+<h1>AFM Data Repositories</h1>
+<p>Submit a new AFM dataset repository below. Submissions appear under the appropriate category after submission.</p>
 
+<!-- Submission Form -->
+<h2>Submit a Repository</h2>
 <form id="repoForm">
   <label for="category">Category</label>
-  <select id="category" name="category" required>
-    <option value="">-- Select Category --</option>
+  <select id="category" required>
     <option value="Bio-AFM Images">Bio-AFM Images</option>
     <option value="High-Speed AFM Videos">High-Speed AFM Videos</option>
     <option value="Material Images">Material Images</option>
   </select>
 
-  <label for="title">Repository Name</label>
-  <input type="text" id="title" name="title" required>
+  <label for="name">Repository Name</label>
+  <input type="text" id="name" required>
 
-  <label for="link">Link</label>
-  <input type="text" id="link" name="link" required>
+  <label for="link">URL</label>
+  <input type="url" id="link" required>
 
-  <label for="desc">Short Description</label>
-  <textarea id="desc" name="desc" rows="3" required></textarea>
+  <label for="description">Description</label>
+  <textarea id="description" required></textarea>
 
-  <input type="submit" value="Submit Repository">
+  <button type="submit">Submit</button>
 </form>
 
-<hr>
+<!-- Repositories Section -->
+<div id="repos">
+  <div class="category" id="Bio-AFM Images">
+    <h2>Bio-AFM Images</h2>
+  </div>
+  <div class="category" id="High-Speed AFM Videos">
+    <h2>High-Speed AFM Videos</h2>
+  </div>
+  <div class="category" id="Material Images">
+    <h2>Material Images</h2>
+  </div>
+</div>
 
-<h2>Bio-AFM Images</h2>
-<div id="Bio-AFM Images"></div>
-
-<h2>High-Speed AFM Videos</h2>
-<div id="High-Speed AFM Videos"></div>
-
-<h2>Material Images</h2>
-<div id="Material Images"></div>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/11.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.8.0/firebase-firestore-compat.js"></script>
 
 <script>
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzL5EaQKr0WilFq8KyF_ldQGAUew36qN3JB2QHd73lt38iAuTY-qmOX_7a7OLjnnfVJ/exec"; // ← Replace with your Apps Script URL
+  // Your Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyAQdiNy5uhJyDJ4gF6qefpya0VLEQuR4A0",
+    authDomain: "nanoloczform.firebaseapp.com",
+    projectId: "nanoloczform",
+    storageBucket: "nanoloczform.appspot.com",
+    messagingSenderId: "464412339490",
+    appId: "1:464412339490:web:f221918f6f29d56920897b"
+  };
 
-  document.getElementById('repoForm').addEventListener('submit', function (e) {
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  // Handle form submission
+  document.getElementById('repoForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-
     const category = document.getElementById('category').value;
-    const title = document.getElementById('title').value.trim();
-    const link = document.getElementById('link').value.trim();
-    const desc = document.getElementById('desc').value.trim();
+    const name = document.getElementById('name').value;
+    const link = document.getElementById('link').value;
+    const description = document.getElementById('description').value;
 
-    // Add entry to page
-    const entry = document.createElement('div');
-    entry.classList.add('repo-entry');
-    entry.innerHTML = `
-      <strong>${title}</strong><br>
-      <a href="${link}" target="_blank">${link}</a><br>
-      <em>${desc}</em>
-    `;
-    document.getElementById(category).appendChild(entry);
+    await db.collection('repositories').add({ category, name, link, description });
+    alert('Repository submitted successfully!');
+    e.target.reset();
+    loadRepos();
+  });
 
-    // Save to Google Sheets
-    fetch(SCRIPT_URL, {
-      method: 'POST',
-      body: JSON.stringify({ category, title, link, desc }),
-      headers: { 'Content-Type': 'application/json' }
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log("Submitted:", data);
-    })
-    .catch(error => {
-      console.error("Error submitting:", error);
+  // Load and display repos
+  async function loadRepos() {
+    const snapshot = await db.collection('repositories').get();
+    const categories = ['Bio-AFM Images', 'High-Speed AFM Videos', 'Material Images'];
+    categories.forEach(cat => {
+      document.getElementById(cat).innerHTML = `<h2>${cat}</h2>`;
     });
 
-    e.target.reset();
-  });
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      const wrapper = document.getElementById(data.category);
+      if (wrapper) {
+        const div = document.createElement('div');
+        div.className = 'repo-entry';
+        div.innerHTML = `<strong><a href="${data.link}" target="_blank">${data.name}</a></strong><br>${data.description}`;
+        wrapper.appendChild(div);
+      }
+    });
+  }
+
+  loadRepos();
 </script>
