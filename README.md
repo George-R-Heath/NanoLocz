@@ -5,8 +5,9 @@
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
 Atomic Force Microscopy Image Analysis Platform.\
-Go to [**Releases**](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version. [**Link to User Guide**](https://george-r-heath.github.io/NanoLocz/docs/)
-
+[**Download**](https://github.com/George-R-Heath/NanoLocz/releases)\
+[**User Guide**](https://george-r-heath.github.io/NanoLocz/docs/)\
+[**Open AFM Data Resources**](https://george-r-heath.github.io/NanoLocz/docs/AFMDataRepositories)
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
 image data from AFM and HS-AFM imaging with the aim of increasing throughput. 
