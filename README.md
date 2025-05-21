@@ -36,8 +36,6 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 - **More Auto-Save Options** – Greater control over automatic saving behavior.  
 - **General Bug Fixes**
 
-</details>
-   <summary><strong>🔄 NanoLocz v1.3 Update Highlights</strong></summary>
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
@@ -51,7 +49,7 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 * **Line Profile snap to angle** - Hold 'shift' when drawing line profiles to snap to the nearest 45 degrees 
 * **New pre-set auto levelling options** 
 * **Recalculate correlation button** - recalculates the correlation between particles and the selected reference image, useful for excluding poorly matching particles after Fine Align (Fine align tab)
-</details>
+
 **01.03.2024 - Full Article Released in *Small Methods*:** [https://doi.org/10.1002/smtd.202301766](https://doi.org/10.1002/smtd.202301766) 
 
 **01.03.2024 - NanoLocz Version 1.10 Update:**
