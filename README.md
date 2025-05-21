@@ -4,12 +4,13 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
-Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-r-heath.github.io/NanoLocz/docs/)\
-[Go to **Releases** to download the latest version](https://github.com/George-R-Heath/NanoLocz/releases).
-
+Atomic Force Microscopy Image Analysis Platform.\
+[**Download**](https://github.com/George-R-Heath/NanoLocz/releases)\
+[**User Guide**](https://george-r-heath.github.io/NanoLocz/docs/)\
+[**Open AFM Data Resources**](https://george-r-heath.github.io/NanoLocz/docs/AFMDataRepositories)
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
-height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](https://george-r-heath.github.io/NanoLocz/docs/)
+image data from AFM and HS-AFM imaging with the aim of increasing throughput. 
 
 **Capabilities:**
 * Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
@@ -17,11 +18,27 @@ height data from AFM and HS-AFM imaging with the aim of increasing throughput. s
 * Mask Analysis - Particle Detection - Single Particle Tracking
 * Simulation AFM - *Localization AFM* 
 * Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls, .h5
+![screenshot_nanoLocz](https://github.com/user-attachments/assets/fcd9a249-2649-40c1-8be7-578cc08f42df)
 
-please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
+**21.05.2025 - NanoLocz Version 1.30 Update:**
+
+- **Drag & Drop Support** – Quickly open files or folders by dragging them into the file list box.  
+- **Multi-Plane Levelling** – Enhanced levelling using weighted plane/line fits across multiple surfaces (code adapted from [SPIW](https://sourceforge.net/projects/spiw)).  
+- **Flexible Draw/Analysis Tools** – Apply line, circle, square or freehand drawing with analysis tools profiles, averages, ROIs, and masks.  
+- **Improved File Import** – Broader support for common table/image formats (`.csv`, `.jpg`, etc.); `.asd` now reads all channels; faster loading for large `.jpk` files.  
+- **Unified Histogram Slider** – One interface for controlling sliders used in masking, particle detection, and now LAFM.  
+- **Expanded LAFM Tools** – Auto-rendering, FRC resolution analysis, new filters, alignment tools, localization import/filtering.  
+- **Enhanced 3D Plotting** – Lighting controls and export bug fixes for 3D movie generation.  
+- **Improved Label Tools** – Time formatting options and ability to position labels off-image.  
+- **Transfer Detections** – Move particle detections between channels with one tool.  
+- **Dark/Light Mode Toggle** – Easily switch between UI themes.  
+- **More Auto-Save Options** – Greater control over automatic saving behavior.  
+- **General Bug Fixes**
+
 **15.05.2024 - NanoLocz Version 1.20 Update:**
+
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
 * **AutoSaving** - Choose output folder and preferred file format 1st
 * **Improved Saving** - Including batch export

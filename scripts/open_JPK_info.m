@@ -92,14 +92,23 @@ for i = 2:numel(file_info)
     for k=1:size(strsp,1)
         if(strcmp(strsp{k,1},'retrace')==1)
             if(strcmp(strsp{k+2,1},'true'))
-                trace_type_flag='ReTrace';
+                if strcmp(strsp{k-1,1},'Smooth')
+                    trace_type_flag='Bi-Directional Raw';
+                else
+                    trace_type_flag='ReTrace';
+                end
             else
-                trace_type_flag='Trace';
+                if strcmp(strsp{k-1,1},'Smooth')
+                    trace_type_flag='Bi-Directional Smooth';
+                else
+                    trace_type_flag='Trace';
+                end
             end
+            
             break
+         
         end
     end
-
     Channels(i-1)=struct(...
         'Channel_name',...
         Channel_Name,...

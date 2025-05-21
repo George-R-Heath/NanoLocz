@@ -9,7 +9,7 @@ n = numel(Part.Locs(:,1));
 cla(app.loadbar)
 stepsPerUpdate = ceil(n * (updateInterval / 100));
 rectangle(app.loadbar, 'Position', [0, 0, 1, 1], 'FaceColor', 'none', 'EdgeColor', 'black');
-progressBar = rectangle(app.loadbar, 'Position', [0, 0, 0, 1], 'FaceColor', 'green');
+progressBar = rectangle(app.loadbar, 'Position', [0, 0, 0, 1], 'FaceColor', [0.30,0.98,0.40]);
 progressText = text(app.loadbar, 0.5, 0.5, '0%', 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');
     img_pad = padarray(ImageTarget,[round(ref.position(4))+xtra, round(ref.position(3))+xtra],0,'both');
 

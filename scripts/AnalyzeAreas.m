@@ -1,7 +1,7 @@
 function [T1, T2] = AnalyzeAreas(M,img,props,scale,time,speed)
 
 %   props = {'Area','Centroid','Orientation','Circularity','Perimeter',...
-%           'MinIntensity','MaxIntensity','MeanIntensity'};
+%           'MinIntensity','MaxIntensity','MeanIntensity','PixelValues'};
 
 if scale(1) ==0
     scale(1) =1;
@@ -56,6 +56,7 @@ if numel(sd)>2
                 si.Area = si.Area*(scale(fr)*scale(fr));
                 if ismember('MeanIntensity', props)
                     si.('Vol. (nm3)') =  si.Area.*si.MeanIntensity;
+   
                 end
             end
 
@@ -68,7 +69,13 @@ if numel(sd)>2
         end
 
     end
-
+    if ismember('PixelValues', props)
+        RMS_si = [];
+        for ii = 1:numel(T1.PixelValues)
+            RMS_si(ii) = (mean((T1.PixelValues{ii}(:)-T1.MeanIntensity(ii)).^2))^0.5;
+        end
+        RMS_si = RMS_si';
+    end
 T1.('Track id') = zeros(numel(T1.Frame),1);
 
 else
@@ -83,6 +90,14 @@ else
           if ismember('MeanIntensity', props)
               T1.('Vol. (nm3)') =  T1.Area.*T1.MeanIntensity;
           end
+      end
+      
+      if ismember('PixelValues', props)
+          RMS_si = [];
+          for ii = 1:numel(T1.PixelValues)
+              RMS_si(ii) = (mean((T1.PixelValues{ii}(:)-T1.MeanIntensity(ii)).^2))^0.5;
+          end
+          RMS_si = RMS_si';
       end
 
 if ismember('Perimeter', props)
@@ -105,6 +120,9 @@ if numel(sd)>2
         av_h(i) = sum(h(:))/sum(temp(:));
         hb =(temp<0.5).*temp_img;
         av_hb(i) = sum(hb(:))/sum(temp(:)<0.5);
+
+        RMS_h(i) = (mean((h(h~=0)-av_h(i)).^2))^0.5;
+        RMS_hb(i) =(mean((hb(hb~=0)-av_hb(i)).^2))^0.5;
         %av_h =mean height of mask and av_h2 = mean of other area
         Vol(i) = av_h(i).*sum(temp(:))*(scale(fr)*scale(fr));
     end
@@ -115,21 +133,30 @@ if numel(sd)>2
     times = time;
     end
 else
-     temp = M(:,:);
-        temp_img = img(:,:);
-        Area_p = sum(temp(:))/(sd(1)*sd(2))*100;
-        h =temp.*temp_img;
-        av_h = sum(h(:))/sum(temp(:));
-        hb =(temp<0.5).*temp_img;
-        av_hb = sum(hb(:))/sum(temp(:)<0.5);
-        %av_h =mean height of mask and av_h2 = mean of other area
-        Vol = av_h.*sum(temp(:))*(scale(1)*scale(1));
-          times = 1;
-          frame = 1;
+    temp = M(:,:);
+    temp_img = img(:,:);
+    Area_p = sum(temp(:))/(sd(1)*sd(2))*100;
+    h =temp.*temp_img;
+    av_h = sum(h(:))/sum(temp(:));
+    hb =(temp<0.5).*temp_img;
+    av_hb = sum(hb(:))/sum(temp(:)<0.5);
+    RMS_h = (mean((h(h~=0)-av_h).^2))^0.5;
+    RMS_hb =(mean((hb(hb~=0)-av_hb).^2))^0.5;
+    %av_h =mean height of mask and av_h2 = mean of other area
+    Vol = av_h.*sum(temp(:))*(scale(1)*scale(1));
+    times = 1;
+    frame = 1;
 end
-    varNames = {'Frame','Time (s)', 'Area (%)','Mean z (nm)','Background z (nm)', 'Vol. (nm3)'};
-    T2 = table(frame', times', Area_p', av_h', av_hb', Vol','VariableNames',varNames);
+    varNames = {'Frame','Time (s)', 'Area (%)','Mean Mask (nm)','RMS Mask (nm)','Mean Background (nm)','RMS background (nm)', 'Vol. (nm3)'};
+    T2 = table(frame', times', Area_p', av_h',RMS_h', av_hb',RMS_hb', Vol','VariableNames',varNames);
     
+    T1 = removevars(T1, {'PixelValues'});
+    x = T1.Centroid(:,1);
+    y = T1.Centroid(:,1);
+    T1 = removevars(T1, {'Centroid'});
+    T1 = addvars(T1,x,'Before',4,'NewVariableNames','x');
+    T1 = addvars(T1,y,'Before',5,'NewVariableNames','y');
+    T1 = addvars(T1,RMS_si,'Before',6,'NewVariableNames','RMS');
 end
 
 
