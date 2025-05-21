@@ -4,13 +4,12 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
-Atomic Force Microscopy Analysis Platform. [Link to User Guide.](https://george-r-heath.github.io/NanoLocz/docs/)\
-[Go to **Releases** to download the latest version](https://github.com/George-R-Heath/NanoLocz/releases).
+Atomic Force Microscopy Image Analysis Platform.\
+Go to [**Releases**](https://github.com/George-R-Heath/NanoLocz/releases) to download the latest version. [**Link to User Guide**](https://george-r-heath.github.io/NanoLocz/docs/)
 
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
-height data from AFM and HS-AFM imaging with the aim of increasing throughput. see [User Guide here!](https://george-r-heath.github.io/NanoLocz/docs/)
-![screenshot_nanoLocz](https://github.com/user-attachments/assets/fcd9a249-2649-40c1-8be7-578cc08f42df)
+image data from AFM and HS-AFM imaging with the aim of increasing throughput. 
 
 **Capabilities:**
 * Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
@@ -18,8 +17,8 @@ height data from AFM and HS-AFM imaging with the aim of increasing throughput. s
 * Mask Analysis - Particle Detection - Single Particle Tracking
 * Simulation AFM - *Localization AFM* 
 * Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls, .h5
+![screenshot_nanoLocz](https://github.com/user-attachments/assets/fcd9a249-2649-40c1-8be7-578cc08f42df)
 
-please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not here
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
 **21.05.2025 - NanoLocz Version 1.30 Update:**
@@ -36,8 +35,11 @@ please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not h
 - **Dark/Light Mode Toggle** – Easily switch between UI themes.  
 - **More Auto-Save Options** – Greater control over automatic saving behavior.  
 - **General Bug Fixes**
-  
+
+</details>
+   <summary><strong>🔄 NanoLocz v1.3 Update Highlights</strong></summary>
 **15.05.2024 - NanoLocz Version 1.20 Update:**
+
 * **Processing speed** - Improved app start-up speed + speed increases for Particle Detection, LAFM and Particle Assembly steps
 * **AutoSaving** - Choose output folder and preferred file format 1st
 * **Improved Saving** - Including batch export
@@ -49,7 +51,7 @@ please request (to g.r.heath@leeds.ac.uk) if your preferred file format is not h
 * **Line Profile snap to angle** - Hold 'shift' when drawing line profiles to snap to the nearest 45 degrees 
 * **New pre-set auto levelling options** 
 * **Recalculate correlation button** - recalculates the correlation between particles and the selected reference image, useful for excluding poorly matching particles after Fine Align (Fine align tab)
-
+</details>
 **01.03.2024 - Full Article Released in *Small Methods*:** [https://doi.org/10.1002/smtd.202301766](https://doi.org/10.1002/smtd.202301766) 
 
 **01.03.2024 - NanoLocz Version 1.10 Update:**
