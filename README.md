@@ -4,10 +4,10 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/George-R-Heath/NanoLocz/total)
 
 # NanoLocz <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/ecb7d878-0bfa-4d41-8b0e-16309cd8be42" width="50">
-Atomic Force Microscopy Image Analysis Platform.\
-[**Download**](https://github.com/George-R-Heath/NanoLocz/releases)\
-[**User Guide**](https://george-r-heath.github.io/NanoLocz/docs/)\
-[**Open AFM Data Resources**](https://george-r-heath.github.io/NanoLocz/docs/AFMDataRepositories)
+Atomic Force Microscopy Image Analysis Platform.
+* [**Download NanoLocz**](https://github.com/George-R-Heath/NanoLocz/releases)
+* [**User Guide**](https://george-r-heath.github.io/NanoLocz/docs/)
+* [**Open AFM Data Resources**](https://george-r-heath.github.io/NanoLocz/docs/AFMDataRepositories)
 ## About NanoLocz
 *NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
 image data from AFM and HS-AFM imaging with the aim of increasing throughput. 
@@ -22,7 +22,7 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
-**21.05.2025 - NanoLocz Version 1.30 Update:**
+**21.05.2025 - [NanoLocz Version 1.30](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
 
 - **Drag & Drop Support** – Quickly open files or folders by dragging them into the file list box.  
 - **Multi-Plane Levelling** – Enhanced levelling using weighted plane/line fits across multiple surfaces (code adapted from [SPIW](https://sourceforge.net/projects/spiw)).  
