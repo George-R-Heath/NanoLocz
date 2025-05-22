@@ -51,7 +51,29 @@
 </style>
 
 <h1>AFM Data Repositories</h1>
-<p>A list of links to data repositories (Zenodo, Figshare…) containing raw AFM data files. To instantly add to the list, please use the form at the bottom of the page.</p>
+<p>A list of links to data repositories (Zenodo, Figshare…) containing raw AFM data files. Submit a new AFM dataset repository below. Submissions instantly appear under the appropriate category after submission.</p>
+
+<!-- Submission Form -->
+<h2>Link a Repository</h2>
+<form id="repoForm">
+  <label for="category">Category</label>
+  <select id="category" required>
+    <option value="Bio-AFM Images">Bio-AFM Images</option>
+    <option value="High-Speed AFM Videos">High-Speed AFM Videos</option>
+    <option value="Material Images">Material Images</option>
+  </select>
+
+  <label for="name">Repository Name</label>
+  <input type="text" id="name" required>
+
+  <label for="link">URL</label>
+  <input type="url" id="link" required>
+
+  <label for="description">Description</label>
+  <textarea id="description" required></textarea>
+
+  <button type="Add Link">Submit</button>
+</form>
 
 <!-- Repositories Section -->
 <div id="repos">
@@ -71,7 +93,7 @@
 <script src="https://www.gstatic.com/firebasejs/11.8.0/firebase-firestore-compat.js"></script>
 
 <script>
-  // Firebase config
+  // Your Firebase config
   const firebaseConfig = {
     apiKey: "AIzaSyAQdiNy5uhJyDJ4gF6qefpya0VLEQuR4A0",
     authDomain: "nanoloczform.firebaseapp.com",
@@ -93,7 +115,6 @@
     const link = document.getElementById('link').value;
     const description = document.getElementById('description').value;
 
-    // Add repository data to Firestore
     await db.collection('repositories').add({ category, name, link, description });
     alert('Repository submitted successfully!');
     e.target.reset();
@@ -104,8 +125,6 @@
   async function loadRepos() {
     const snapshot = await db.collection('repositories').get();
     const categories = ['Bio-AFM Images', 'High-Speed AFM Videos', 'Material Images'];
-
-    // Clear existing categories content
     categories.forEach(cat => {
       document.getElementById(cat).innerHTML = `<h2>${cat}</h2>`;
     });
@@ -122,30 +141,5 @@
     });
   }
 
-  // Load repositories when the page loads
-  window.onload = loadRepos;
+  loadRepos();
 </script>
-
-<!-- Submission Form -->
-<h2>Submit a Repository</h2>
-<p>Please add links to the existing AFM data repositories containing raw data below. Once submitted, the links will automatically be categorized and displayed under the appropriate section.</p>
-
-<form id="repoForm">
-  <label for="category">Category</label>
-  <select id="category" required>
-    <option value="Bio-AFM Images">Bio-AFM Images</option>
-    <option value="High-Speed AFM Videos">High-Speed AFM Videos</option>
-    <option value="Material Images">Material Images</option>
-  </select>
-
-  <label for="name">Repository Name</label>
-  <input type="text" id="name" required>
-
-  <label for="link">URL</label>
-  <input type="url" id="link" required>
-
-  <label for="description">Description</label>
-  <textarea id="description" required></textarea>
-
-  <button type="submit">Submit</button>
-</form>
