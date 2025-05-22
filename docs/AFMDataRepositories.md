@@ -49,8 +49,9 @@
     background-color: #038c59;
   }
 </style>
+
 <h1>AFM Data Repositories</h1>
-<p>A list of links to data repositories (Zenodo, Figshare…) containing raw AFM data files. To instantly add to the list please use the form at the bottom of the page.</p>
+<p>A list of links to data repositories (Zenodo, Figshare…) containing raw AFM data files. To instantly add to the list, please use the form at the bottom of the page.</p>
 
 <!-- Repositories Section -->
 <div id="repos">
@@ -70,7 +71,7 @@
 <script src="https://www.gstatic.com/firebasejs/11.8.0/firebase-firestore-compat.js"></script>
 
 <script>
-  // Your Firebase config
+  // Firebase config
   const firebaseConfig = {
     apiKey: "AIzaSyAQdiNy5uhJyDJ4gF6qefpya0VLEQuR4A0",
     authDomain: "nanoloczform.firebaseapp.com",
@@ -92,6 +93,7 @@
     const link = document.getElementById('link').value;
     const description = document.getElementById('description').value;
 
+    // Add repository data to Firestore
     await db.collection('repositories').add({ category, name, link, description });
     alert('Repository submitted successfully!');
     e.target.reset();
@@ -102,6 +104,8 @@
   async function loadRepos() {
     const snapshot = await db.collection('repositories').get();
     const categories = ['Bio-AFM Images', 'High-Speed AFM Videos', 'Material Images'];
+
+    // Clear existing categories content
     categories.forEach(cat => {
       document.getElementById(cat).innerHTML = `<h2>${cat}</h2>`;
     });
@@ -118,11 +122,14 @@
     });
   }
 
+  // Load repositories when the page loads
+  window.onload = loadRepos;
+</script>
 
 <!-- Submission Form -->
 <h2>Submit a Repository</h2>
-  <p>Please add links to the existing AFM data repositories containing raw data below. Once submitted, the links will automatically be categorized and displayed under the appropriate section.</p>
-  
+<p>Please add links to the existing AFM data repositories containing raw data below. Once submitted, the links will automatically be categorized and displayed under the appropriate section.</p>
+
 <form id="repoForm">
   <label for="category">Category</label>
   <select id="category" required>
@@ -142,5 +149,3 @@
 
   <button type="submit">Submit</button>
 </form>
-  loadRepos();
-</script>
