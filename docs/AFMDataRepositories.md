@@ -49,31 +49,8 @@
     background-color: #038c59;
   }
 </style>
-
 <h1>AFM Data Repositories</h1>
-<p>Submit a new AFM dataset repository below. Submissions appear under the appropriate category after submission.</p>
-
-<!-- Submission Form -->
-<h2>Submit a Repository</h2>
-<form id="repoForm">
-  <label for="category">Category</label>
-  <select id="category" required>
-    <option value="Bio-AFM Images">Bio-AFM Images</option>
-    <option value="High-Speed AFM Videos">High-Speed AFM Videos</option>
-    <option value="Material Images">Material Images</option>
-  </select>
-
-  <label for="name">Repository Name</label>
-  <input type="text" id="name" required>
-
-  <label for="link">URL</label>
-  <input type="url" id="link" required>
-
-  <label for="description">Description</label>
-  <textarea id="description" required></textarea>
-
-  <button type="submit">Submit</button>
-</form>
+<p>A list of links to data repositories (Zenodo, Figshare…) containing raw AFM data files. To instantly add to the list please use the form at the bottom of the page.</p>
 
 <!-- Repositories Section -->
 <div id="repos">
@@ -141,5 +118,29 @@
     });
   }
 
+
+<!-- Submission Form -->
+<h2>Submit a Repository</h2>
+  <p>Please add links to the existing AFM data repositories containing raw data below. Once submitted, the links will automatically be categorized and displayed under the appropriate section.</p>
+  
+<form id="repoForm">
+  <label for="category">Category</label>
+  <select id="category" required>
+    <option value="Bio-AFM Images">Bio-AFM Images</option>
+    <option value="High-Speed AFM Videos">High-Speed AFM Videos</option>
+    <option value="Material Images">Material Images</option>
+  </select>
+
+  <label for="name">Repository Name</label>
+  <input type="text" id="name" required>
+
+  <label for="link">URL</label>
+  <input type="url" id="link" required>
+
+  <label for="description">Description</label>
+  <textarea id="description" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
   loadRepos();
 </script>
