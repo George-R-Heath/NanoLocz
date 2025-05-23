@@ -51,10 +51,10 @@
 </style>
 
 <h1>AFM Data Repositories</h1>
-<p>Submit a new AFM dataset repository below. Submissions appear under the appropriate category after submission.</p>
+<p>A list of links to data repositories (Zenodo, Figshare…) containing raw AFM data files. Submit a new AFM dataset repository below. Submissions instantly appear under the appropriate category after submission.</p>
 
 <!-- Submission Form -->
-<h2>Submit a Repository</h2>
+<h2>Link a Repository</h2>
 <form id="repoForm">
   <label for="category">Category</label>
   <select id="category" required>
@@ -72,7 +72,7 @@
   <label for="description">Description</label>
   <textarea id="description" required></textarea>
 
-  <button type="submit">Submit</button>
+  <button type="Add Link">Submit</button>
 </form>
 
 <!-- Repositories Section -->
