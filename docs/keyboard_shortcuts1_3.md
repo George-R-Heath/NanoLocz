@@ -18,22 +18,26 @@ title: Keyboard Shortcuts
   padding-bottom: 5px; /* Adds space between the text and the border */
   }
   
-#ashortcut-table {
+#shortcut-table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
 #shortcut-table th, #shortcut-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #888; /* lighter border for visibility */
   padding: 8px;
+  color: white; /* ensures text is visible */
+  vertical-align: middle;
 }
 
+
 #shortcut-table tr:nth-child(even) {
-  background-color: #222222;
+  background-color: #2a2a2a;
 }
-  #shortcut-table tr:nth-child(odd) {
-  background-color: #3b3b3b;
+
+#shortcut-table tr:nth-child(odd) {
+  background-color: #1c1c1c;
 }
 
 #shortcut-table tr:hover {
