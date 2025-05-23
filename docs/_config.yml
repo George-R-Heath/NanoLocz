@@ -1,7 +1,0 @@
-title: NanoLocz User Guide
-description: Comprehensive guide for using NanoLocz
-baseurl: "/NanoLocz/docs"  # your URL base
-url: "https://George-R-Heath.github.io"
-theme: jekyll-theme-primer
-source: docs   # add this ONLY if your repo layout expects docs as source
-markdown: kramdown
