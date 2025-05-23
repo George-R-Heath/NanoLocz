@@ -33,12 +33,15 @@ title: Saving Data
 # Saving Data
 This section explains how to save data in NanoLocz. Data can either be saved/processed in bulk and for later use or by exporting the current views in the plots for figures/presentations.\
 [1. Save or Batch Process Data](#1-save-or-batch-process-data)\
-[2. Export Images, Videos and Data](#2-exporting-images-videos-and-data) 
+[2. Export Images, Videos and Data](#2-exporting-images-videos-and-data)\
+[3. h5 and mat File Structure for NanoLocz](#3-h5-and-mat-file-structure-for-nanolocz)
 
 ## 1. Save or Batch Process Data
 The following describes saving and batch processing options so that raw and processed data can be quickly reopened in NanoLocz or other software. See section 2 for export of images / movies for publication quality figures or presentations. 
 
 ### Single or Batch Save 
+![saving](https://github.com/user-attachments/assets/80aa1639-b97b-4aeb-8791-8446da320bc7)
+
 - To save one or multiple files open the Save Options using save <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/6e6c149b-85c8-46d2-9d31-4152f5415854" width="25">
 - Select the format, to retain all image and analysis data use combined file format options. To access the images and data analysis in other software use separate Image/video and Analysis tables formats.
 - Select Files to save using the Save dropdown box:\
@@ -53,7 +56,18 @@ The following describes saving and batch processing options so that raw and proc
 **Create a new subfolder:** Generates 1 subfolder in the Output folder with the name: ‘xxxxxxx NanoLocz Output’ where xxxxxx is the name of the current open folder. Recommended for general use.\
 **Create multiple subfolder(s):** Generates 1 subfolder per image/movie in the Output folder with the name: ‘Image Name’. Recommended if saving many separate tables and images.   
 - Press Save to run the save
-![save](https://github.com/George-R-Heath/NanoLocz/assets/90329395/c2e197c7-def9-4347-ba4b-89874aa0edaa)
+
+## Filename Generation Options
+Controlled by Output Filename:
+* **Auto save (same name):** Saves using the same name as the filename (will overwrite files)
+* **Prompt for name:** Asks to choose filename/location
+* **Add suffix _copy:** Adds _copy to the filename
+* **Add suffix _channel:** Adds _’channel’ to the filename where channel is replaced by the source channel eg '_Height-retrace'
+* **Save to new location:** Asks the user to choose a folder
+
+**Note**
+* File extensions are stripped if they match known types (csv, png, mat, etc.).
+* Auto save and add suffix will save to the output folder and overwrite files with matching filenames 
 
 ### Format Options 
 ![Format table](https://github.com/George-R-Heath/NanoLocz/assets/90329395/dd2755a1-09c7-4d26-9dbc-4ee9ce17c5db)
@@ -94,3 +108,69 @@ Note: Exporting as .tiff, .csv, .txt, or .xls enables export without loss of ima
 * From the desired format dropdown box select ‘MATLAB Workspace’
 * Press the Export button
 * Data will appear in the MATLAB workspace
+
+## 3. h5 and mat File Structure for NanoLocz
+
+When data is saved in the `.h5` or '.mat' format, NanoLocz organizes it into a hierarchical structure. This format allows for easy access to all data components used in analysis and visualization.
+
+###  Structure Overview
+
+Each top-level field in the data struct (`Data`) becomes a **group** in the HDF5 file. Nested structures create **subgroups**, and each individual variable (numeric arrays, tables, strings) becomes a **dataset**.
+
+### 📁 Typical HDF5 Layout
+/Imagedata → Primary image data\
+/ImageInfo → Metadata about the image (e.g., pixel size, channel info)\
+/ref/ROIimage → Region of interest image used as a reference\
+/ref/simImage → Simulated reference image (if available)\
+/ref/LAFM → LAFM reference image (if used)\
+/ref/av → Averaged reference\
+/ImageLocs → Struct or array containing localized particle data\
+/LAFMLocs → Struct with LAFM localization results\
+
+### 📁 Typical MATLAB Data Layout
+####  Image Data
+- `Data.Imagedata`  
+  → The primary image data array.
+
+- `Data.ImageInfo`  
+  → Metadata about the image, including:
+  - Pixel size
+  - Scan size
+  - Channel information
+
+---
+
+#### Particle Detection (`ImageLocs`)
+- `Data.ImageLocs`  
+  → A struct containing detected particle data.
+
+- `Data.ImageLocs.Locs`  
+  → A table where each row corresponds to a detected particle. Columns:
+  1. `x` — x-coordinate  
+  2. `y` — y-coordinate  
+  3. `z` — height  
+  4. `ccr` — cross-correlation value  
+  5. `Frame` — frame number  
+  6. `id` — unique particle ID  
+  7. `Track id` — tracking ID (for tracked particles)  
+  8. `Angle` — orientation angle
+
+---
+
+#### LAFM Localizations (`LAFMLocs`)
+- `Data.LAFMLocs`  
+  → A struct containing LAFM localization results.
+
+- `Data.LAFMLocs.Locs`  
+  → A table where each row corresponds to a localization event. Columns:
+  1. `x` — x-coordinate  
+  2. `y` — y-coordinate  
+  3. `z` — height  
+  4. `Peak Prominence` — peak prominence  
+  5. `Particle` — particle ID  
+  6. `Frame` — frame number  
+  7. `Time` — time point  
+  8. `ccr` — cross-correlation value  
+  9. `PT Cloud RMSE` — point cloud root-mean-square error  
+  10. `Error` — localization error estimate
+
