@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Home
+title: NanoLocz User Guide
 ---
 
-<link rel="stylesheet" href="/assets/styles.css">
-
-# 🧭 NanoLocz User Guide <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/36d664a6-38e2-4405-b5cc-a962093cf13b" width="30">
-
+## Welcome to NanoLocz User Guide
+Use the sidebar to navigate the topics.
 ## 📌 Version 1.2
 
 <div class="nav-grid">
