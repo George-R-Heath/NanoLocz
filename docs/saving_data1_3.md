@@ -20,15 +20,15 @@ title: Saving Data
 
 </style>
 
-## NanoLocz User Guide <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/36d664a6-38e2-4405-b5cc-a962093cf13b" width="30">
+## [NanoLocz User Guide 1.3](https://george-r-heath.github.io/NanoLocz/docs/) <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/36d664a6-38e2-4405-b5cc-a962093cf13b" width="30">
 
-<a href="installation.html">Installation</a> - - <a href="getting_started.html">Getting Started</a> - - <a href="saving_data.html">Saving Data</a> \
-<a href="image_levelling.html" style="color: red;">Level</a> - - 
-<a href="particle_detection.html" style="color: lightblue;">Detect</a> - - 
-<a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
-<a href="localize.html" style="color: pink;">Localize</a>\
-<a href="area_analysis.html" style="color: limegreen;">Area Analysis</a> - - <a href="keyboard_shortcuts.html">Keyboard Shortcuts</a>\
-<a href="simulation_afm.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use.html">YouTube Video Tutorials</a> 
+<a href="installation1_3.html">Installation</a> - - <a href="getting_started1_3.html">Getting Started</a> - - <a href="saving_data1_3.html">Saving Data</a> \
+<a href="image_levelling1_3.html" style="color: red;">Level</a> - - 
+<a href="particle_detection1_3.html" style="color: lightblue;">Detect</a> - - 
+<a href="fine_align1_3.html" style="color: orange;">FineAlign</a> - - 
+<a href="localize1_3.html" style="color: pink;">Localize</a>\
+<a href="area_analysis1_3.html" style="color: limegreen;">Area Analysis</a> - - <a href="keyboard_shortcuts1_3.html">Keyboard Shortcuts</a>\
+<a href="simulation_afm1_3.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use1_3.html">YouTube Video Tutorials</a> 
 
 # Saving Data
 This section explains how to save data in NanoLocz. Data can either be saved/processed in bulk and for later use or by exporting the current views in the plots for figures/presentations.\
