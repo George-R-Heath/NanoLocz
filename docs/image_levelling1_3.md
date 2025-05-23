@@ -32,8 +32,7 @@ title: Image Levelling
 <a href="simulation_afm1_3.html" style="color: orange;">Simulation AFM</a> - - <a href="general_use1_3.html">YouTube Video Tutorials</a> 
 
 # Image Levelling
-
-![leveling](https://github.com/George-R-Heath/NanoLocz/assets/90329395/2be0667b-9a0c-437e-95a2-c77f6eb34f9e)
+![image](https://github.com/user-attachments/assets/10695695-7bf1-4a14-8aab-99722f52b676)
 
 ### Manual Leveling
 **Plane Leveling:**\
@@ -60,17 +59,70 @@ The options to generate a mask are:
 5) Automatically using the **Fit** button (fits a Gaussian to all the values in the movie and using 1.5σ (standard deviation) as the threshold values.)
 * To level with a mask, line leveling or plane leveling is then performed as before but fitting is performed using only the non-masked values.
 * Press the 'Accept' button to apply.
+---
+### 🛠 Automatic Leveling Routines
+NanoLocz provides several pre-configured **automatic leveling routines** to standardize and correct height data across AFM image stacks. These routines are tailored for different sample features.
 
-### Automatic Leveling
-Leveling typically requires multiple iterations, to achieve this automatically several pre-set leveling routines are implemented in NanoLocz. For example the ‘Iterative Holes’ and ‘Iterative Peaks’ routines which use the following routine: 
-1.	Subtract a plane fit in x and y with 2nd order polynomial then subtract the median line in x.
-2.	Fit a Gaussian to all the heights in the movie and set a mask threshold to
-z > 1.5σ (Iterative Peaks) or z <-1.5σ (Iterative Holes) to generate a mask.
-3.	Repeat leveling step 1. with the threshold mask applied.
-4.	Generate new mask by repeating step 2.
-5.	Subtract a plane fit in x and y with 2nd order polynomial then subtract a 1st order polynomial line in x with the threshold mask applied.
-   
-‘Iterative Holes’ and ‘Iterative Peaks’ automatic leveling routines are designed for image sets with a fraction of lower features such as membrane defects (Iterative Holes) or a fraction of objects with higher features such as features on a mica surface (Iterative Holes). Other iterative leveling routine in NanoLocz include basic leveling followed by Otsu mask leveling or leveling followed by two leveling iterations with Gauissan fitted masks for z outside the range of +/-1.5σ
+#### `plane-line`
+- **Steps**:
+  - Subtracts a best-fit plane (x and y directions).
+  - Applies a median line subtraction in x.
+#### `multi-plane-edges`
+- **Purpose**: Edge-based masking for step detection -> useful if there are multiple flat surfaces
+- **Steps**:
+  - Plane subtraction.
+  - Median line if vertical variation dominates.
+  - Edge detection masking → used to apply weighted plane and line leveling multiple times.
+  - Final mean-plane subtraction.
+
+#### `multi-plane-otsu`
+- **Purpose**: Uses Otsu method to generate edge masks for multi plane fitting -> useful if there are multiple flat surfaces
+- **Steps**:
+  - Plane subtraction.
+  - Median line subtraction if vertical variance exceeds threshold.
+  - Otsu edge masks applied iteratively for plane/line subtraction.
+  - Final mean-plane subtraction.
+
+#### `iterative 1nm high`, `iterative -1nm low`, `iterative high low`
+- **Purpose**: Removes features above/below a fixed height.
+- **Steps**:
+  1. Plane subtraction.
+  2. Line subtraction if vertical variance dominates.
+  3. Iteratively thresholds using fixed z-limits and reapplies plane and median line subtraction with masking.
+
+#### `Line1 + Otsu Line2`
+- **Steps**:
+  - Subtracts a linear line fit (first pass).
+  - Applies Otsu thresholding to mask and subtracts a stronger 2nd order line fit.
+
+####  `high-low x2 (fit)`
+- **Purpose**: Uses Gaussian fitting on the histogram to determine leveling thresholds.
+- **Steps**:
+  - Initial plane + median line subtraction.
+  - Histogram of z-values fitted with Gaussian.
+  - Mask generated for values within ±1.5σ.
+  - Leveling reapplied with mask.
+
+#### `iterative fit holes`, `iterative fit peaks`
+- **Purpose**:
+  - *Holes*: For images with lower-intensity defects.
+  - *Peaks*: For images with higher protrusions.
+- **Steps**:
+  1. 2nd-order plane fit + median line subtraction.
+  2. Gaussian fit on z-values → ±1.5σ mask (shifted for holes or peaks).
+  3. Repeat leveling with mask.
+  4. Generate new mask and repeat.
+  5. Final 1st-order line subtraction with mask.
+---
+
+### Choosing the Right Routine
+
+- **Flat surfaces with sparse particles** → `iterative 1nm high` or `high-low x2 (fit)`
+- **Surfaces with pits/defects** → `iterative fit holes`
+- **Surfaces with sharp peaks** → `iterative fit peaks`
+- **Samples with more than 1 plane** → `multi-plane-edges` or `multi-plane-otsu`
+- **General leveling** → `plane-line` or `Line1 + Otsu Line2`
+
 
 ## YouTube video on Leveling + Area Analysis
 [![YouTube NanoLocz Leveling + Area Analysis](https://img.youtube.com/vi/R5D6T04M7Rc/0.jpg)](https://www.youtube.com/watch?v=R5D6T04M7Rc)
