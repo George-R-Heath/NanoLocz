@@ -74,16 +74,16 @@ title: Getting Started
 
 ## 1. User Interface
 
-![startup](https://github.com/George-R-Heath/NanoLocz/assets/90329395/fdc193f1-b746-474a-8b3c-4d792244e074)
-
 See individual help pages for help on:
-<a href="image_levelling.html" style="color: red;">Level</a> - - 
-   <a href="particle_detection.html" style="color: lightblue;">Detect</a> - - 
-   <a href="fine_align.html" style="color: orange;">FineAlign</a> - - 
-    <a href="localize.html" style="color: pink;">Localize</a>
+<a href="image_levelling1_3.html" style="color: red;">Level</a> - - 
+   <a href="particle_detection1_3.html" style="color: lightblue;">Detect</a> - - 
+   <a href="fine_align1_3.html" style="color: orange;">FineAlign</a> - - 
+    <a href="localize1_3.html" style="color: pink;">Localize</a>
 
-![NanoLocz Guide 2](https://github.com/George-R-Heath/NanoLocz/assets/90329395/896b5bdf-26e9-4072-8e20-9fe6a0e98178)
+    
+![Leftpanel](https://github.com/user-attachments/assets/9970f593-296c-4d7a-bc0c-858f521ed6c2)
 
+![image](https://github.com/user-attachments/assets/22e21bd0-2fbf-4f17-ad30-5e2ddd7b1c3b)
 
 ## 2. Set Your Preferences
 Let’s set up your NanoLocz settings such that the next time you open the app your preferred input/output folder and other settings will be preloaded.
@@ -137,11 +137,20 @@ Files which are noted as 'Folder' in the Video Format column can be opened as a 
     <td>Folder</td>
     <td><a href="https://uk.mathworks.com/matlabcentral/fileexchange/68760-open_jpk" class="author-link">R. D. Ortuso</a></td>
   </tr>
+   <tr>
+    <td class="bruker"></td>
+    <td>.h5-jpk</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>Single File</td>
+   <td>NanoLocz</td>
+  </tr>
   <tr>
     <td>RIBM™</td>
     <td>.asd</td>
     <td>✓</td>
-    <td>x</td>
+    <td>✓</td>
     <td>✓</td>
     <td>Single file</td>
     <td>G. Tagiltsev & S. Scheuring</td>
