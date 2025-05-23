@@ -1,58 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/docs/style.css" />
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: black;
-        color: white;
-      }
-
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 240px;
-        background-color: #111;
-        padding: 1em;
-        overflow-y: auto;
-      }
-
-      .sidebar a {
-        display: block;
-        margin: 8px 0;
-        color: white;
-        text-decoration: none;
-      }
-
-      .sidebar a.active {
-        background-color: #FFA500;
-        color: black !important;
-        border-radius: 4px;
-        padding-left: 5px;
-      }
-
-      .content {
-        margin-left: 260px;
-        padding: 1.5em;
-      }
-
-      h1, h2, h3, h4, h5, h6 {
-        color: #FFA500;
-        border-bottom: 2px solid #FFA500;
-        padding-bottom: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    {% include nav.html %}
-    <div class="content">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      {% include nav.html %}
+    </aside>
+    <main class="content">
+      <h1>{{ page.title }}</h1>
       {{ content }}
-    </div>
-  </body>
+    </main>
+  </div>
+</body>
 </html>
