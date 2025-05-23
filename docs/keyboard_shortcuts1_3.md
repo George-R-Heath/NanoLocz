@@ -17,7 +17,28 @@ title: Keyboard Shortcuts
   border-bottom: 2px solid #FFA500; /* Bright orange border */
   padding-bottom: 5px; /* Adds space between the text and the border */
   }
+  
+#ashortcut-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+#shortcut-table th, #shortcut-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#shortcut-table tr:nth-child(even) {
+  background-color: #222222;
+}
+  #shortcut-table tr:nth-child(odd) {
+  background-color: #3b3b3b;
+}
+
+#shortcut-table tr:hover {
+  background-color: #000000;
+}
 </style>
 
 ## [NanoLocz User Guide 1.3](https://george-r-heath.github.io/NanoLocz/docs/) <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/36d664a6-38e2-4405-b5cc-a962093cf13b" width="30">
