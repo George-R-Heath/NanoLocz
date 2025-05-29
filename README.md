@@ -19,11 +19,12 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 * Simulation AFM - *Localization AFM* 
 * Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls, .h5
 
-**Free Online NanoLocz 1.3 Workshops:**\
-To mark the release of v1.3, We're hosting two free online workshops via zoom. [Register here for a workshop here to select your preferred time](https://www.eventbrite.co.uk/e/nanolocz-13-workshop-tickets-1387635167139?aff=oddtdtcreator)
+**[Free Online NanoLocz 1.3 Workshops:](https://www.eventbrite.co.uk/e/nanolocz-13-workshop-tickets-1387635167139?aff=oddtdtcreator)**\
+To mark the release of v1.3, We're hosting two free online workshops via zoom. [Register here](https://www.eventbrite.co.uk/e/nanolocz-13-workshop-tickets-1387635167139?aff=oddtdtcreator)
 * **Session 1:** Wednesday 11 June, 09:30 BST
 * **Session 2:** Tuesday 17 June, 16:00 BST
 
+Workshops are open to anyone - select your preferred time.
 
 ![screenshot_nanoLocz](https://github.com/user-attachments/assets/fcd9a249-2649-40c1-8be7-578cc08f42df)
 
