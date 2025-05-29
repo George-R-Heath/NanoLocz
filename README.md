@@ -13,21 +13,23 @@ Atomic Force Microscopy Image Analysis Platform.
 image data from AFM and HS-AFM imaging with the aim of increasing throughput. 
 
 **Capabilities:**
-* Read AFM file types: .spm,  .asd,  .jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
+* Read AFM file types: .spm,  .asd,  .jpk, .h5-jpk,  .ibw,  .ARIS,  .tiff, .nhf, .gwy
 * Image Levelling - Line Profiling  - Image Alignment
 * Mask Analysis - Particle Detection - Single Particle Tracking
 * Simulation AFM - *Localization AFM* 
 * Export as: .tiff, .gif, .avi, .png, .jpeg, .pdf, .txt, .csv, .xls, .h5
+
+  
 ![screenshot_nanoLocz](https://github.com/user-attachments/assets/fcd9a249-2649-40c1-8be7-578cc08f42df)
 
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
-
-**21.05.2025 - [NanoLocz Version 1.30](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
+  
+**29.05.2025 - [NanoLocz Version 1.31](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
 
 - **Drag & Drop Support** – Quickly open files or folders by dragging them into the file list box.  
 - **Multi-Plane Levelling** – Enhanced levelling using weighted plane/line fits across multiple surfaces (code adapted from [SPIW](https://sourceforge.net/projects/spiw)).  
 - **Flexible Draw/Analysis Tools** – Apply line, circle, square or freehand drawing with analysis tools profiles, averages, ROIs, and masks.  
-- **Improved File Import** – Broader support for common table/image formats (`.csv`, `.jpg`, etc.); `.asd` now reads all channels; faster loading for large `.jpk` files.  
+- **Improved File Import** – `.h5-jpk` file opener; support for common table/image formats (`.csv`, `.jpg`, etc.); `.asd` now reads all channels; faster loading for large `.jpk` files.
 - **Unified Histogram Slider** – One interface for controlling sliders used in masking, particle detection, and now LAFM.  
 - **Expanded LAFM Tools** – Auto-rendering, FRC resolution analysis, new filters, alignment tools, localization import/filtering.  
 - **Enhanced 3D Plotting** – Lighting controls and export bug fixes for 3D movie generation.  
@@ -36,6 +38,7 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 - **Dark/Light Mode Toggle** – Easily switch between UI themes.  
 - **More Auto-Save Options** – Greater control over automatic saving behavior.  
 - **General Bug Fixes**
+
 
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 
