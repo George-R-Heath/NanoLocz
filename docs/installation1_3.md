@@ -15,11 +15,25 @@ title: Installation
 
   h1, h2, h3, h4, h5, h6 {
     color: #FFA500;
-  border-bottom: 2px solid #FFA500; /* Bright orange border */
-  padding-bottom: 5px; /* Adds space between the text and the border */
+    border-bottom: 2px solid #FFA500;
+    padding-bottom: 5px;
   }
 
+  /* ---- Code block visibility fix ---- */
+  pre {
+    background-color: #111;   /* dark but distinct from page */
+    color: #f5f5f5;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+
+  code {
+    color: #f5f5f5;
+    background-color: #111;
+  }
 </style>
+
 
 ## [NanoLocz User Guide 1.3-1.4](https://george-r-heath.github.io/NanoLocz/docs/) <img src="https://github.com/George-R-Heath/NanoLocz/assets/90329395/36d664a6-38e2-4405-b5cc-a962093cf13b" width="30">
 
