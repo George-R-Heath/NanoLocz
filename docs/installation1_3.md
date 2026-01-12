@@ -83,15 +83,42 @@ This command removes the quarantine flag that triggers the "damaged" error.
 
 The security flag has now been removed. You can now try to open **`NanoLocz_1_4_Mac_Install.app`** directly from the Finder. It should launch the installer without the "damaged" error.
 
-### Youtube video: Desktop standalone app Installation 
+## Youtube video: Desktop standalone app Installation 
 [![YouTube Desktop standalone app Installation](https://img.youtube.com/vi/EfYbIf45AHo/0.jpg)](https://m.youtube.com/watch?v=EfYbIf45AHo)
 
-### **MATLAB app** 
-- Download `NanoLocz.1.2.mlappinstall` from [Releases](https://github.com/George-R-Heath/NanoLocz/releases).
-- Open 'NanoLocz.mlappinstall' file.
-- This will open MATLAB if not already open and ask you to install. 
-- Once installed the app can be used from the apps tab. For quick access right click the NanoLocz app to add to Favourites and/or Quick Access Toolbar.
-- Requires MATLAB and MATLAB Toolboxes: MATLAB 2020a (the newer the better), Curve Fitting Toolbox, Image Processing Toolbox, Signal Processing Toolbox, Statistics and Machine Learning Toolbox, Bioinformatics Toolbox, Computer Vision Toolbox.
+## **MATLAB app** 
+### 1. Install MATLAB
+Download and install **MATLAB 2020 or later**. During installation, ensure the following toolboxes are selected:
+- Curve Fitting Toolbox  
+- Image Processing Toolbox  
+- Signal Processing Toolbox  
+- Statistics and Machine Learning Toolbox  
+- Bioinformatics Toolbox  
+- Computer Vision Toolbox  
 
-### Youtube video: MATLAB app Installation
+### 2. Download NanoLocz
+Download the appropriate NanoLocz installer from the  
+[GitHub Releases page](https://github.com/George-R-Heath/NanoLocz/releases):
+
+- **MATLAB 2020–2024**  
+  Use: `NanoLocz.1.41.pre2025_Matlab.mlappinstall`
+
+- **MATLAB 2025 and later**  
+  Use: `NanoLocz_v1_41_2025-2026_Matlab.mltbx`
+
+### 3. Install NanoLocz
+Double-click the downloaded `.mlappinstall` or `.mltbx` file.
+
+- MATLAB will launch automatically if it is not already open.
+- Follow the on-screen prompts to complete the installation.
+
+### 4. Launch the App
+Once installed, NanoLocz can be found in the **Apps** tab in MATLAB.
+
+For quicker access:
+- Right-click the **NanoLocz** app icon
+- Select **Add to Favourites** and/or **Add to Quick Access Toolbar**
+
+
+## Youtube video: MATLAB app Installation
 [![YouTube MATLAB app Installation](https://img.youtube.com/vi/155rN7DYzu4/0.jpg)](https://m.youtube.com/watch?v=155rN7DYzu4)
