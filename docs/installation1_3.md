@@ -75,9 +75,7 @@ How to fix by removing the specific security flag that macOS places on downloade
 This command removes the quarantine flag that triggers the "damaged" error.
 1.  In the Terminal window, type the following command exactly as shown, but **DO NOT** press Enter yet:
 
-    ```bash
-    sudo xattr -d com.apple.quarantine 
-    ```
+  `sudo xattr -d com.apple.quarantine`
 
 2.  Open **Finder** and locate your downloaded installer file, which is likely named **`NanoLocz_1_4_Mac_Install.app`**.
 
@@ -85,9 +83,7 @@ This command removes the quarantine flag that triggers the "damaged" error.
 
 4.  The final command should look similar to this (the path will be unique to your machine):
 
-    ```bash
-    sudo xattr -d com.apple.quarantine /Users/YourName/Downloads/NanoLocz_1_4_Mac_Install.app
-    ```
+    `sudo xattr -d com.apple.quarantine /Users/YourName/Downloads/NanoLocz_1_4_Mac_Install.app`
 
 5.  Press **Enter**.
 
