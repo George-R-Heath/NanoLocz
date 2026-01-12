@@ -11,7 +11,7 @@ Atomic Force Microscopy Image Analysis Platform.
 * [**Link to Online NanoLocz Workshop Recording (17th June 2025)**](https://universityofleeds.zoom.us/rec/play/SqusnkRZ6XtgpiFpFrTYcePfl1wyCdc5kvNalC6vM35PChx5oA_AmY764Z8CIDMsbmfA0NQtR2rEFUaf.2xNoox5g3d4Nbehb?eagerLoadZvaPages=&accessLevel=meeting&canPlayFromShare=true&from=my_recording&startTime=1750172854000&componentName=rec-play&originRequestUrl=https%3A%2F%2Funiversityofleeds.zoom.us%2Frec%2Fshare%2FMCDwNs4gNISdMGb_s9ZumpkicbJtw4c0kylhQ4zh-z7qAblvlPgTHuHjB6V6T1w.-IjzHoqmPSTS_PE-%3FstartTime%3D1750172854000)
 
 ## About NanoLocz
-*NanoLocz* is a free interactive AFM image viewer and analysis platform. It's designed for browsing and analysing
+*NanoLocz* is a free interactive AFM image viewer and analysis platform designed for browsing and analysing
 image data from AFM and HS-AFM imaging with the aim of increasing throughput. 
 
 **Capabilities:**
@@ -24,6 +24,12 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 ![screenshot_nanoLocz](https://github.com/user-attachments/assets/fcd9a249-2649-40c1-8be7-578cc08f42df)
 
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
+
+**12.01.2026 - [NanoLocz Version 1.41](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
+  - **Core processing functions are now managed in an external library (.m files) to ensure better stability and simplify future maintenance.**
+  - **Improved compatibility and stability with MATLAB 2025 environments.**
+  - **New Feature: Added a dedicated Log Panel to track and store processing steps and errors.**
+  - **General Bug Fixes**
   
 **29.05.2025 - [NanoLocz Version 1.31](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
 
@@ -39,7 +45,6 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 - **Dark/Light Mode Toggle** – Easily switch between UI themes.  
 - **More Auto-Save Options** – Greater control over automatic saving behavior.  
 - **General Bug Fixes**
-
 
 **15.05.2024 - NanoLocz Version 1.20 Update:**
 
