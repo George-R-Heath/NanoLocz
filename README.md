@@ -25,7 +25,7 @@ image data from AFM and HS-AFM imaging with the aim of increasing throughput.
 
 ## [Link to User Guide](https://george-r-heath.github.io/NanoLocz/docs/)
 
-**12.01.2026 - [NanoLocz Version 1.41](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
+**12.01.2026 - [NanoLocz Version 1.42](https://github.com/George-R-Heath/NanoLocz/releases) Update:**
   - **Core processing functions are now managed in an external library (.m files) to ensure better stability and simplify future maintenance.**
   - **Improved compatibility and stability with MATLAB 2025 environments.**
   - **New Feature: Added a dedicated Log Panel to track and store processing steps and errors.**
